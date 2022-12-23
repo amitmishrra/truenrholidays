@@ -21,6 +21,7 @@
 
 .service{
     border: 1px solid black;
-     height: 250px;
+     /* height: 350px; */
      width: 300px;
+     padding: 10px;
 }

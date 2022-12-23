@@ -1,5 +1,6 @@
 import React from 'react'
 import "./style.css"
+import  serviceData from "../../JSON/services.json"
 export default function HomePage() {
     return (
         <div>
@@ -19,21 +20,27 @@ export default function HomePage() {
                         Our Services
                     </div>
 
-                    <div className="services">
-                        <div className="service">
-                            <div className="img">
-                                <img src="" alt="" />
-                            </div>
+                    <div className="services flex flex-row justify-between md:justify-around  overflow-scroll md:overflow-auto">
+                        {
+                            serviceData.map((data) => {
+                                return (
+                                    <div className="service flex flex-col justify-around min-w-[300px] m-8">
+                                        <div className="img flex justify-center items-center">
+                                            <img className='md:w-[50%] ' src={data.img} alt="" />
+                                        </div>
 
-                            <div className="heading">
+                                        <div className="heading font-bold">
+                                            {data.type}
+                                        </div>
 
-                            </div>
+                                        <div className="para">
+                                            {data.detail}
+                                        </div>
 
-                            <div className="para">
-
-                            </div>
-
-                        </div>
+                                    </div>
+                                )
+                            })
+                        }
                     </div>
 
                 </div>

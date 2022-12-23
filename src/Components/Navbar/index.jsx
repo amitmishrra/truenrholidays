@@ -31,12 +31,13 @@ export default function Header() {
             setIcon('navToggler')
     }
     return (
-        <div className={"headWrapper z-[1] h-[75px] md:h-[100px]" +navBG }>
-            <div className="header h-full maxWidth">
+        <div className={"headWrapper z-[1]" +navBG }>
+            <div className="header maxWidth">
                 <NavLink to={'/'} >
                     <div className='flex justify-center items-center'>
                         <div className="logo">
-                            <img className='w-[55px] lg:w-[70px]' src="assets/logo.png" alt="" />
+                            <img className='w-[70px] lg:w-[120px]' src="assets/logo.png" alt="" />
+                  
                         </div>
                         {/* <div className='invisible lg:visible text-[25px] logotext'>
                             Sarcastic Cowboy

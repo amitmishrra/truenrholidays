@@ -15,7 +15,7 @@ export default function HomePage() {
             </div>
 
             <div className="lowerSections maxwidth ">
-                <div className="sericesSection">
+                <div className="servicesSection">
                     <div className="cursiveFont text-[50px] md:text-[90px]  text-center text-[#246883]">
                         Our Services
                     </div>
@@ -43,6 +43,10 @@ export default function HomePage() {
                         }
                     </div>
 
+                </div>
+
+                <div className="destinationsSection">
+                    
                 </div>
             </div>
         </div>

@@ -13,7 +13,7 @@ export default function HomePage() {
                 </button>
             </div>
 
-            <div className="lowerSections maxwidth">
+            <div className="lowerSections maxwidth ">
                 <div className="sericesSection">
                     <div className="cursiveFont text-[30px] md:text-[60px] text-black text-center">
                         Our Services
@@ -21,6 +21,17 @@ export default function HomePage() {
 
                     <div className="services">
                         <div className="service">
+                            <div className="img">
+                                <img src="" alt="" />
+                            </div>
+
+                            <div className="heading">
+
+                            </div>
+
+                            <div className="para">
+
+                            </div>
 
                         </div>
                     </div>

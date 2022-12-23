@@ -20,8 +20,9 @@
 }
 
 .service{
-    border: 1px solid black;
+    /* border: 1px solid black; */
      /* height: 350px; */
+     background-color: rgb(241, 243, 243);
      width: 300px;
      padding: 10px;
 }

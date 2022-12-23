@@ -16,24 +16,24 @@ export default function HomePage() {
 
             <div className="lowerSections maxwidth ">
                 <div className="sericesSection">
-                    <div className="cursiveFont text-[30px] md:text-[60px] text-black text-center">
+                    <div className="cursiveFont text-[50px] md:text-[90px]  text-center text-[#246883]">
                         Our Services
                     </div>
 
-                    <div className="services flex flex-row justify-between md:justify-around  overflow-scroll md:overflow-auto">
+                    <div className="services flex flex-row justify-between  overflow-scroll md:overflow-auto">
                         {
                             serviceData.map((data) => {
                                 return (
-                                    <div className="service flex flex-col justify-around min-w-[300px] m-8">
-                                        <div className="img flex justify-center items-center">
-                                            <img className='md:w-[50%] ' src={data.img} alt="" />
+                                    <div className="service flex flex-col justify-around min-w-[300px] m-8 shadow-xl rounded-[10px]">
+                                        <div className="img flex justify-center items-center mb-4">
+                                            <img className='w-[60%] ' src={data.img} alt="" />
                                         </div>
 
-                                        <div className="heading font-bold">
+                                        <div className="headingFont font-bold text-[18px] mb-4 text-[#246883]">
                                             {data.type}
                                         </div>
 
-                                        <div className="para">
+                                        <div className="para textFont text-[15px] text-justify mb-4">
                                             {data.detail}
                                         </div>
 

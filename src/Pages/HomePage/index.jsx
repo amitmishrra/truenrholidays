@@ -2,16 +2,28 @@ import React, { useEffect, useState } from 'react'
 import "./style.css"
 import serviceData from "../../JSON/services.json"
 import internationDestination from "../../JSON/international.json"
+import domesticDestinantion from "../../JSON/domestic.json"
 export default function HomePage() {
     const [internationalIndex, setInternationalIndex] = useState(0);
+    const [domesticIndex, setDomesticIndex] = useState(0);
+
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            internationalIndex === 8 ? setInternationalIndex(0) : setInternationalIndex(internationalIndex + 1);
+            domesticIndex === 7 ? setDomesticIndex(0) : setDomesticIndex(domesticIndex + 1);
+        }, 2500)
+        return () => clearInterval(intervalId);
+    }, [internationalIndex])
 
 
     // useEffect(() => {
-    //     const intervalId = setInterval(() => {
-    //         internationalIndex === 8 ? setInternationalIndex(0) : setInternationalIndex(internationalIndex + 1);
+    //     const interval2 = setInterval(() => {
+           
     //     }, 2500)
-    //     return () => clearInterval(intervalId);
-    // }, [internationalIndex])
+    //     return () => clearInterval(interval2);
+    // }, [domesticIndex])
+
 
     return (
         <div className='w-[100%] mb-8'>
@@ -67,7 +79,7 @@ export default function HomePage() {
                                 {internationDestination[internationalIndex].country}
                             </div>
                             <div className='h-[250px] overflow-hidden rounded-[15px]'>
-                                <img src={internationDestination[internationalIndex].img} className='image md:w-[100%] rounded-[19px]' alt="" />
+                                <img src={internationDestination[internationalIndex].img} className='image md:w-[100%] rounded-[10px]' alt="" />
                             </div>
 
                         </div>
@@ -86,10 +98,10 @@ export default function HomePage() {
                     <div className="international flex flex-col md:flex-row-reverse justify-between items-center w-[90%] p-4 m-auto rounded-[10px] shadow-xl mt-12">
                         <div className="img md:w-1/2 flex flex-col md:ml-8  md:items-right">
                             <div className="cursiveFont text-[40px] md:text-[50px] md:text-right text-[#246883]  md:mt-[5px] ml-4 mr-4 ">
-                                {internationDestination[internationalIndex].country}
+                                {domesticDestinantion[domesticIndex].place}
                             </div>
                             <div className='h-[250px] overflow-hidden rounded-[15px]'>
-                                <img src={internationDestination[internationalIndex].img} className='image md:w-[100%] rounded-[19px]' alt="" />
+                                <img src={domesticDestinantion[domesticIndex].img} className='image md:w-[100%] rounded-[10px]' alt="" />
                             </div>
 
                         </div>

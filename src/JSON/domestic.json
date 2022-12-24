@@ -1,0 +1,34 @@
+[
+    {
+        "place": "Kashmir",
+        "img" : "assets/domestic/0.jpg"
+    },
+    {
+        "place": "Himachal",
+        "img" : "assets/domestic/1.jpg"
+    },
+    {
+        "place": "North East India",
+        "img" : "assets/domestic/2.jpg"
+    },
+    {
+        "place": "Andaman",
+        "img" : "assets/domestic/3.jpg"
+    },
+    {
+        "place": "Kerala",
+        "img" : "assets/domestic/4.jpg"
+    },
+    {
+        "place": "Rajasthan",
+        "img" : "assets/domestic/5.jpg"
+    },
+    {
+        "place": "Gujarat",
+        "img" : "assets/domestic/6.jpg"
+    },
+    {
+        "place": "Madhya Pradesh",
+        "img" : "assets/domestic/7.jpg"
+    }
+]

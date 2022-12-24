@@ -1,5 +1,11 @@
 [
     {
+        "type" : "Domestic & International Package",
+        "detail" : "This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent",
+        "img" : "assets/icons/package.png"
+    },
+    
+    {
         "type" : "Comprehensive Trip Planning",
         "detail" : "This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent",
         "img" : "assets/icons/planTrip.png"
@@ -13,5 +19,30 @@
         "type" : "International Travel Guidance",
         "detail" : "This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent",
         "img" : "assets/icons/international.svg"
+    },
+    {
+        "type" : "Air tickets",
+        "detail" : "This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent",
+        "img" : "assets/icons/airTicket.png"
+    },
+    {
+        "type" : "Comprehensive Trip Planning",
+        "detail" : "This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent",
+        "img" : "assets/icons/planTrip.png"
+    },
+    {
+        "type" : "Visa ",
+        "detail" : "This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent",
+        "img" : "assets/icons/visa.png"
+    },
+    {
+        "type" : "Hotel Booking ",
+        "detail" : "This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent",
+        "img" : "assets/icons/hotel.png"
+    },
+    {
+        "type" : "Cruise Booking ",
+        "detail" : "This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent",
+        "img" : "assets/icons/cruise.png"
     }
 ]

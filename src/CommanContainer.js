@@ -6,7 +6,9 @@ const CommonContainer = ({children}) => {
         
         <>
         <Header/>
-        {children}
+      <div className="lg:pl-[120px]">
+      {children}
+      </div>
         {/* <Footer /> */}
         </>
     )

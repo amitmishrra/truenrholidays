@@ -3,8 +3,8 @@ import "./style.css"
 import  serviceData from "../../JSON/services.json"
 export default function HomePage() {
     return (
-        <div>
-            <div className='homepage h-[100vh] justify-center items-center flex flex-col'>
+        <div className='w-[100%]'>
+            <div className='homepage h-[100vh] justify-center items-center flex flex-col '>
                 <div className="cursiveFont text-[50px] md:text-[90px] text-gray-300 text-center">
                     here, there, and everywhere..
                 </div>

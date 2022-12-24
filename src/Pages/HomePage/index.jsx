@@ -4,14 +4,25 @@ import serviceData from "../../JSON/services.json"
 const internationDestination = ["Sri lanka", "Thailand", "Maldives", "Dubai", "Bali", "Europe ", "USA", "Australia","New Zealand"]
 export default function HomePage() {
 
-    const [international, setInternational] = useState('Thailand');
+    const [international, setInternational] = useState('Sri lanka');
     const [internationalIndex, setInternationalIndex] = useState(0);
 
-    useEffect(()=>{
-        internationalIndex >= 0 ? setTimeout(() => {
-            setInternationalIndex(internationalIndex+1)
-        }, 3000) : setInternationalIndex(0)
-    })
+    // useEffect(()=>{
+    //     internationalIndex < internationDestination.length-1 || internationalIndex ==0  ? setTimeout(() => {
+    //         setInternationalIndex(internationalIndex+1)
+    //         setInternational(`assets/international/${internationalIndex}.jpg`)
+    //     }, 3000) : setInternationalIndex(0)
+    // })
+
+    // const [index, setIndex] = useState(1);
+
+    useEffect(() => {
+  
+      const intervalId = setInterval(() => {
+        internationalIndex === 8 ? setInternationalIndex(0) : setInternationalIndex(internationalIndex + 1);
+      }, 2500)
+      return () => clearInterval(intervalId);
+    }, [internationalIndex])
 
     return (
         <div className='w-[100%] mb-8'>
@@ -63,7 +74,7 @@ export default function HomePage() {
 
                     <div className="international flex flex-col md:flex-row justify-center items-center w-[90%] p-4 m-auto rounded-[10px] shadow-2xl">
                         <div className="img md:w-1/2">
-                            <img src={`assets/international/${internationalIndex}.jpg`} className='image md:w-[300px] rounded-[10px]' alt="" />
+                            <img src={"assets/international/"+ internationalIndex +".jpg"} className='image md:w-[90%] rounded-[10px]' alt="" />
                             <div className="cursiveFont text-[30px] md:text-[50px] text-white mt-[-45px] md:mt-[-75px] ml-4">
                             {internationDestination[internationalIndex]}
                             </div>

@@ -9,7 +9,7 @@
     position: fixed;
     width: 120px;
     backdrop-filter: blur(10px);
-    background-color: #858585d3;
+    background-color: rgb(241, 243, 243);
     transition: 0.3s;
     height: 100vh;
     padding-top: 20px;
@@ -89,7 +89,7 @@
 
 @media screen and (max-width : 1024px) {
     .headWrapper {
-        background-color: #2c2c2c5e;
+        background-color: rgba(241, 243, 243, 0.493);
          align-items: center;
         display: flex;
         width: 100%;
@@ -117,7 +117,7 @@
         width: 2.2rem;
         height: 0.2rem;
         margin: 0.5rem;
-        background-color: rgb(235 235 235);
+        background-color: rgb(146, 146, 146);
         transition: 0.5s;
     }
 

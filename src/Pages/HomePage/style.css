@@ -30,6 +30,11 @@
     background-color: rgb(241, 243, 243);
 }
 
-/* .image{
-    background-image: linear-gradient(rgba(41, 41, 41, 0.356), rgba(7, 7, 7, 0.848))
-} */
+.countryText{
+    background-color: black;
+    z-index: 0;
+}
+
+.image{
+    z-index: -1;
+}

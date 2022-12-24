@@ -1,0 +1,38 @@
+[
+    {
+        "country": "Sri Lank",
+        "img" : "assets/international/0.jpg"
+    },
+    {
+        "country": "Thailand",
+        "img" : "assets/international/1.jpg"
+    },
+    {
+        "country": "Maldives",
+        "img" : "assets/international/2.jpg"
+    },
+    {
+        "country": "Dubai",
+        "img" : "assets/international/3.jpg"
+    },
+    {
+        "country": "Bali",
+        "img" : "assets/international/4.jpg"
+    },
+    {
+        "country": "Europe",
+        "img" : "assets/international/5.jpg"
+    },
+    {
+        "country": "United States of America",
+        "img" : "assets/international/6.jpg"
+    },
+    {
+        "country": "Australia",
+        "img" : "assets/international/7.jpg"
+    },
+    {
+        "country": "New Zealand",
+        "img" : "assets/international/8.jpg"
+    }
+]

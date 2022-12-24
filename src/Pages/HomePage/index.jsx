@@ -1,28 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import "./style.css"
 import serviceData from "../../JSON/services.json"
-const internationDestination = ["Sri lanka", "Thailand", "Maldives", "Dubai", "Bali", "Europe ", "USA", "Australia","New Zealand"]
+import internationDestination from "../../JSON/international.json"
 export default function HomePage() {
-
-    const [international, setInternational] = useState('Sri lanka');
     const [internationalIndex, setInternationalIndex] = useState(0);
 
-    // useEffect(()=>{
-    //     internationalIndex < internationDestination.length-1 || internationalIndex ==0  ? setTimeout(() => {
-    //         setInternationalIndex(internationalIndex+1)
-    //         setInternational(`assets/international/${internationalIndex}.jpg`)
-    //     }, 3000) : setInternationalIndex(0)
-    // })
 
-    // const [index, setIndex] = useState(1);
-
-    useEffect(() => {
-  
-      const intervalId = setInterval(() => {
-        internationalIndex === 8 ? setInternationalIndex(0) : setInternationalIndex(internationalIndex + 1);
-      }, 2500)
-      return () => clearInterval(intervalId);
-    }, [internationalIndex])
+    // useEffect(() => {
+    //     const intervalId = setInterval(() => {
+    //         internationalIndex === 8 ? setInternationalIndex(0) : setInternationalIndex(internationalIndex + 1);
+    //     }, 2500)
+    //     return () => clearInterval(intervalId);
+    // }, [internationalIndex])
 
     return (
         <div className='w-[100%] mb-8'>
@@ -72,12 +61,15 @@ export default function HomePage() {
                         Explore Destinations
                     </div>
 
-                    <div className="international flex flex-col md:flex-row justify-center items-center w-[90%] p-4 m-auto rounded-[10px] shadow-2xl">
-                        <div className="img md:w-1/2">
-                            <img src={"assets/international/"+ internationalIndex +".jpg"} className='image md:w-[90%] rounded-[10px]' alt="" />
-                            <div className="cursiveFont text-[30px] md:text-[50px] text-white mt-[-45px] md:mt-[-75px] ml-4">
-                            {internationDestination[internationalIndex]}
+                    <div className="international flex flex-col md:flex-row justify-center items-center w-[90%] p-4 m-auto rounded-[10px] shadow-xl">
+                        <div className="img md:w-1/2 md:mr-8">
+                            <div className="cursiveFont text-[40px] md:text-[50px]  text-[#246883]  md:mt-[5px] ml-4 ">
+                                {internationDestination[internationalIndex].country}
                             </div>
+                            <div className='h-[250px] overflow-hidden rounded-[15px]'>
+                                <img src={internationDestination[internationalIndex].img} className='image md:w-[100%] rounded-[19px]' alt="" />
+                            </div>
+
                         </div>
                         <div className='md:w-1/2 mt-4 md:mt-0'>
                             <div className="headingFont font-bold text-[26px] mb-4 text-[#246883]">
@@ -85,10 +77,40 @@ export default function HomePage() {
                             </div>
 
                             <div className="para textFont text-[15px] text-justify mb-4">
-                            This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent. This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent.
+                                This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent. This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent.
                             </div>
                         </div>
                     </div>
+
+
+                    <div className="international flex flex-col md:flex-row-reverse justify-between items-center w-[90%] p-4 m-auto rounded-[10px] shadow-xl mt-12">
+                        <div className="img md:w-1/2 flex flex-col md:ml-8  md:items-right">
+                            <div className="cursiveFont text-[40px] md:text-[50px] md:text-right text-[#246883]  md:mt-[5px] ml-4 mr-4 ">
+                                {internationDestination[internationalIndex].country}
+                            </div>
+                            <div className='h-[250px] overflow-hidden rounded-[15px]'>
+                                <img src={internationDestination[internationalIndex].img} className='image md:w-[100%] rounded-[19px]' alt="" />
+                            </div>
+
+                        </div>
+                        <div className='md:w-1/2 mt-4 md:mt-0'>
+                            <div className="headingFont font-bold text-[26px] mb-4 text-[#246883]">
+                                Domestic
+                            </div>
+
+                            <div className="para textFont text-[15px] text-justify mb-4">
+                                This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent. This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent.
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
                 </div>
             </div>
         </div>

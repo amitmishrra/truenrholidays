@@ -38,3 +38,47 @@
 .image{
     z-index: -1;
 }
+
+
+.int{
+    background-image: linear-gradient(to bottom,rgba(253, 253, 253, 0),rgba(34, 34, 34, 0.356) , rgba(7, 7, 7, 0.986)), url("../../../public/assets/international/tower.jpg");
+    background-size: cover;
+}
+
+.dom{
+    background-image: linear-gradient(to bottom, rgba(253, 253, 253, 0),rgba(34, 34, 34, 0.568) , rgba(7, 7, 7, 0.986)), url("../../../public/assets/domestic/taj.jpg");
+    background-size: cover;
+}
+
+.exploerButton{
+    border: none;
+    background-color: #2092be;
+    color: white;
+    height: 40px;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.exploerButton:hover{
+    background-color: #246883;
+    color: rgb(197, 197, 197);
+}
+
+.countertext1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 80px;
+    height: 80px; */
+    /* font-size: 23px; */
+    border: 5px solid #246883;
+    border-radius: 150px;
+    /* padding: 14px; */
+}
+
+.countertext2{
+    /* font-size: 20px; */
+}

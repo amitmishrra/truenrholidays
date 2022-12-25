@@ -59,12 +59,52 @@ export default function HomePage() {
 
                 </div>
 
-                <div className="destinationsSection">
+
+
+                <div className="packageSection">
+                    <div className="cursiveFont text-[50px] md:text-[90px]  text-center text-[#246883]">
+                        Packages
+                    </div>
+
+                    <div className="packages flex justify-center items-center flex-col md:flex-row">
+                        <div className="pack h-[350px] w-[300px] int shadow-2xl rounded-[10px] p-4 flex flex-col justify-end md:m-8 m-4">
+                            <div className="headingFont font-bold text-[21px]  text-[#268eb6]">
+                                International
+                            </div>
+                            <div className="para textFont text-[13px] text-white text-justify mb-2">
+                                khsfg hsdf sdkfg s sfh sfs fsfg ih hfsdlshg g gighfdsgfdkgd  hsfgsdf gfghd fg s dfhiosg
+                            </div>
+
+                            <div className="buton">
+                                <button className='exploerButton shadow-2xl'>
+                                    Explore More
+                                </button>
+                            </div>
+                        </div>
+                        <div className="pack h-[350px] w-[300px] dom shadow-2xl rounded-[10px] p-4 flex flex-col justify-end m-4 md:m-8">
+                            <div className="headingFont font-bold text-[21px]  text-[#268eb6]">
+                                Domestic
+                            </div>
+                            <div className="para textFont text-[13px] text-white text-justify mb-2">
+                                khsfg hsdf sdkfg s sfh sfs fsfg ih hfsdlshg g gighfdsgfdkgd  hsfgsdf gfghd fg s dfhiosg
+                            </div>
+
+                            <div className="buton">
+                                <button className='exploerButton shadow-2xl'>
+                                    Explore More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div className="destinationsSection mt-4">
                     <div className="cursiveFont text-[50px] md:text-[90px]  text-center text-[#246883]">
                         Explore Destinations
                     </div>
 
-                    <div className="international flex flex-col md:flex-row justify-center items-center w-[90%] p-4 m-auto rounded-[10px] shadow-xl">
+                    <div className="international flex flex-col md:flex-row justify-center items-center w-[90%] p-4 m-auto rounded-[10px] shadow-xl mt-4">
                         <div className="img md:w-1/2 md:mr-8">
                             <div className="cursiveFont text-[40px] md:text-[50px]  text-[#246883]  md:mt-[5px] ml-4 ">
                                 {internationDestination[internationalIndex].country}
@@ -108,11 +148,47 @@ export default function HomePage() {
                     </div>
                 </div>
 
-                <div className="packageSection">
-                    <div className="cursiveFont text-[50px] md:text-[90px]  text-center text-[#246883]">
-                        Packages
+
+                <div className="counter flex justify-around mt-12 text-center flex-wrap px-4">
+                    <div className='flex flex-col justify-center items-center m-2'>
+                        <div className="countertext1  w-[65px] h-[65px] md:w-[100px] md:h-[100px] p-4 md:text-[23px] font-bold text-[#246883] ">
+                            100+
+                        </div>
+                        <div className="countertext2 md:text-[23px] text-[17px] headingFont text-[#246883] mt-2">
+                            Destinations
+                        </div>
                     </div>
 
+                    <div className='flex flex-col justify-center items-center m-2'>
+                        <div className="countertext1  w-[65px] h-[65px] md:w-[100px] md:h-[100px] p-4 md:text-[23px] font-bold text-[#246883] ">
+                            1K+
+                        </div>
+                        <div className="countertext2 md:text-[23px] text-[17px] headingFont text-[#246883] mt-2">
+                            Journeys
+                        </div>
+                    </div>
+
+                    <div className='flex flex-col justify-center items-center m-2'>
+                        <div className="countertext1  w-[65px] h-[65px] md:w-[100px] md:h-[100px] p-4 md:text-[23px] font-bold text-[#246883] ">
+                            1.5K+
+                        </div>
+                        <div className="countertext2 md:text-[23px] text-[17px] headingFont text-[#246883] mt-2">
+                            Happy Faces
+                        </div>
+                    </div>
+                    <div className='flex flex-col justify-center items-center m-2'>
+                        <div className="countertext1  w-[65px] h-[65px] md:w-[100px] md:h-[100px] p-4 md:text-[33px] text-[28px] font-bold text-[#246883] ">
+                            ∞
+                        </div>
+                        <div className="countertext2 md:text-[23px] text-[17px] headingFont text-[#246883] mt-2">
+                            Memories
+                        </div>
+                    </div>
+
+                </div>
+
+                <div className="cursiveFont text-[35px] md:text-[60px] text-[#246883] text-center mt-12">
+                your destination is waiting for you.
                 </div>
             </div>
         </div>

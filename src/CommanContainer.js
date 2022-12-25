@@ -1,5 +1,6 @@
+import Footer from "./Components/Footer"
 import Header from "./Components/Navbar"
-// import Footer from "./Components/Footer"
+
 
 const CommonContainer = ({children}) => {
     return (
@@ -8,8 +9,9 @@ const CommonContainer = ({children}) => {
         <Header/>
       <div className="lg:pl-[120px]">
       {children}
+      <Footer/>
       </div>
-        {/* <Footer /> */}
+        
         </>
     )
 }

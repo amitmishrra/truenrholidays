@@ -8,7 +8,7 @@
     background-color: #2092be;
     color: white;
     height: 50px;
-    border-radius: 25px;
+    border-radius: 15px;
     padding-left: 16px;
     padding-right: 16px;
     transition: 0.3s;
@@ -20,8 +20,6 @@
 }
 
 .service{
-    /* border: 1px solid black; */
-     /* height: 350px; */
      background-color: rgb(241, 243, 243);
      width: 300px;
      padding: 10px;
@@ -71,14 +69,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 80px;
-    height: 80px; */
-    /* font-size: 23px; */
     border: 5px solid #246883;
     border-radius: 150px;
-    /* padding: 14px; */
-}
-
-.countertext2{
-    /* font-size: 20px; */
 }

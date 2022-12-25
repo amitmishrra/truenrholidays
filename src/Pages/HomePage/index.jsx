@@ -16,15 +16,6 @@ export default function HomePage() {
         return () => clearInterval(intervalId);
     }, [internationalIndex])
 
-
-    // useEffect(() => {
-    //     const interval2 = setInterval(() => {
-           
-    //     }, 2500)
-    //     return () => clearInterval(interval2);
-    // }, [domesticIndex])
-
-
     return (
         <div className='w-[100%] mb-8'>
             <div className='homepage h-[100vh] justify-center items-center flex flex-col '>
@@ -115,13 +106,12 @@ export default function HomePage() {
                             </div>
                         </div>
                     </div>
+                </div>
 
-
-
-
-
-
-
+                <div className="packageSection">
+                    <div className="cursiveFont text-[50px] md:text-[90px]  text-center text-[#246883]">
+                        Packages
+                    </div>
 
                 </div>
             </div>

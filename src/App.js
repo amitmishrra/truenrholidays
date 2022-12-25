@@ -1,11 +1,11 @@
-import { Route, Routes, HashRouter } from "react-router-dom"
+import { Route, Routes, BrowserRouter } from "react-router-dom"
 import CommonContainer from "./CommanContainer";
 import HomePage from "./Pages/HomePage";
 
 function App() {
   return (
     <>
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
 
           <Route path="/"
@@ -15,7 +15,7 @@ function App() {
               </CommonContainer>
             } />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </>
   );
 }

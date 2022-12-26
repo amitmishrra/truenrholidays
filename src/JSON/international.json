@@ -3,54 +3,54 @@
         "country": "Sri Lank",
         "img" : "assets/international/0.jpg",
         "pricing" : "₹ 50,000",
-        "path" : "/internationalPackages#Sri_Lank"
+        "path" : "/internationalPackages/Sri_Lank"
     },
     {
         "country": "Thailand",
         "img" : "assets/international/1.jpg",
         "pricing" : "₹ 50,000",
-        "path" : "/internationalPackages#Thailand"
+        "path" : "/internationalPackages/Thailand"
     },
     {
         "country": "Maldives",
         "img" : "assets/international/2.jpg",
         "pricing" : "₹ 50,000",
-        "path" : "/internationalPackages#Maldives"
+        "path" : "/internationalPackages/Maldives"
     },
     {
         "country": "Dubai",
         "img" : "assets/international/3.jpg",
         "pricing" : "₹ 50,000",
-        "path" : "/internationalPackages#Dubai"
+        "path" : "/internationalPackages/Dubai"
     },
     {
         "country": "Bali",
         "img" : "assets/international/4.jpg",
         "pricing" : "₹ 50,000",
-        "path" : "/internationalPackages#Bali"
+        "path" : "/internationalPackages/Bali"
     },
     {
         "country": "Europe",
         "img" : "assets/international/5.jpg",
         "pricing" : "₹ 50,000",
-        "path" : "/internationalPackages#kashmir"
+        "path" : "/internationalPackages/kashmir"
     },
     {
         "country": "United States of America",
         "img" : "assets/international/6.jpg",
         "pricing" : "₹ 50,000",
-        "path" : "/internationalPackages#Europe"
+        "path" : "/internationalPackages/Europe"
     },
     {
         "country": "Australia",
         "img" : "assets/international/7.jpg",
         "pricing" : "₹ 50,000",
-        "path" : "/internationalPackages#Australia"
+        "path" : "/internationalPackages/Australia"
     },
     {
         "country": "New Zealand",
         "img" : "assets/international/8.jpg",
         "pricing" : "₹ 50,000",
-        "path" : "/internationalPackages#New_Zealand"
+        "path" : "/internationalPackages/New_Zealand"
     }
 ]

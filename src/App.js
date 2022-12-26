@@ -38,7 +38,7 @@ function App() {
                 <Route path={`${dest.path}`}
                   element={
                     <CommonContainer>
-                      <Destination description={dest.description} title={dest.place} image={dest.img}/>
+                      <Destination description={dest.description} title={dest.place} image={dest.img} duration={dest.duration} places={dest.places} offer={dest.offer} pricing={dest.pricing}/>
                     </CommonContainer>
                   } />
               )

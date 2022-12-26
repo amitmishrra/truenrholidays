@@ -7,7 +7,7 @@ const CommonContainer = ({children}) => {
         
         <>
         <Header/>
-      <div className="lg:pl-[120px]">
+      <div className="lg:pl-[150px]">
      <div className="min-h-[100vh]">
      {children}
      </div>

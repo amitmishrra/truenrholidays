@@ -3,6 +3,7 @@ import "./style.css"
 import serviceData from "../../JSON/services.json"
 import internationDestination from "../../JSON/international.json"
 import domesticDestinantion from "../../JSON/domestic.json"
+import { NavLink } from 'react-router-dom'
 export default function HomePage() {
     const [internationalIndex, setInternationalIndex] = useState(0);
     const [domesticIndex, setDomesticIndex] = useState(0);
@@ -76,9 +77,9 @@ export default function HomePage() {
                             </div>
 
                             <div className="buton">
-                                <button className='exploerButton shadow-2xl'>
+                                <NavLink to="/internationalPackages" className='exploerButton rounded-[10px] py-2 shadow-2xl'>
                                     Explore More
-                                </button>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="pack h-[350px] w-[300px] dom shadow-2xl rounded-[10px] p-4 flex flex-col justify-end m-4 md:m-8">
@@ -90,9 +91,9 @@ export default function HomePage() {
                             </div>
 
                             <div className="buton">
-                                <button className='exploerButton shadow-2xl'>
+                                <NavLink to="/domesticPackages" className='exploerButton rounded-[10px] py-2 shadow-2xl'>
                                     Explore More
-                                </button>
+                                </NavLink>
                             </div>
                         </div>
                     </div>

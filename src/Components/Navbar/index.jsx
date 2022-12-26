@@ -8,11 +8,14 @@ export default function Header() {
     const [togglerIcon, setIcon] = useState("navToggler");
     const [activeIndex, setActiveIndex] = useState(0);
     const [navBG, setNavBG] = useState('navbarBackgroundInactive')
+    const [hideoptions, setHideOptions] = useState("hidden")
+    const [activeArrow, setActiveArrow] = useState("▼")
 
     const location = useLocation()
     const paths = [
     '/',
-    '/packages',
+    '/domesticPackages',
+    '/internationalPackages',
     '/about',
     '/contact']
 
@@ -30,6 +33,13 @@ export default function Header() {
             setIcon('navToggler toggle') :
             setIcon('navToggler')
     }
+
+    const packageToggle= ()=>{
+        activeArrow ==  "▼" ?  setActiveArrow("▲") : setActiveArrow("▼");
+        hideoptions =="hidden" ? setHideOptions("show ml-4") : setHideOptions("hidden ml-4");
+    }
+
+
     return (
         <div className={"headWrapper z-[1]" +navBG }>
             <div className="header maxWidth">
@@ -39,17 +49,16 @@ export default function Header() {
                             <img className='w-[70px] lg:w-[120px]' src="assets/logo.png" alt="" />
                   
                         </div>
-                        {/* <div className='invisible lg:visible text-[25px] logotext'>
-                            Sarcastic Cowboy
-                        </div> */}
                     </div>
                 </NavLink>
                 <div className={active} >
                     <ul className='appleFont' >
                         <li onClick={navToggle}><NavLink  className={activeIndex == 0 ? 'active_item' : 'menu_item'} to={'/'} > Home </NavLink></li>
-                        <li onClick={navToggle}><NavLink  className={activeIndex == 1 ? 'active_item ' : 'menu_item'} to={'/domesticPackages'} > Packages </NavLink></li>
-                        <li onClick={navToggle}><NavLink  className={activeIndex == 2 ? 'active_item ' : 'menu_item'} to={'/about'} > About Us </NavLink></li>
-                        <li onClick={navToggle}><NavLink  className={activeIndex === 3 ? 'active_item ' : 'menu_item'} to={'/contact'} > Contact </NavLink></li>
+                        <li onClick={packageToggle} className={'menu_item'} to={''} > Packages<span>{activeArrow}</span> </li>
+                        <li className={activeArrow !=  "▲" ? hideoptions : null} onClick={navToggle}><NavLink  className={activeIndex == 1  ? 'active_item '  : 'menu_item ' } to={'/domesticPackages'} >&#9679; Domestic </NavLink></li>
+                        <li className={activeArrow !=  "▲" ? hideoptions : null} onClick={navToggle}><NavLink  className={activeIndex == 2 ? 'active_item ' : 'menu_item ' } to={'/internationalPackages'} >&#9679; International </NavLink></li>
+                        <li onClick={navToggle}><NavLink  className={activeIndex == 3 ? 'active_item ' : 'menu_item'} to={'/about'} > About Us </NavLink></li>
+                        <li onClick={navToggle}><NavLink  className={activeIndex === 4 ? 'active_item ' : 'menu_item'} to={'/contact'} > Contact </NavLink></li>
                     </ul>
                 </div>
                 <div onClick={navToggle} className={togglerIcon}>

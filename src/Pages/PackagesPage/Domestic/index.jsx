@@ -19,7 +19,7 @@ export default function DomesticPackages() {
                                     <img src={data.img} className='rounded-[10px]' alt="" />
                                 </div>
                                 <div className='textFont'>
-                                    <div className='headingFont font-bold text-[21px]  text-[#268eb6]'>
+                                    <div className='headingFont font-bold text-[21px] text-[#268eb6]'>
                                         {data.place}
                                     </div>
                                     <div>

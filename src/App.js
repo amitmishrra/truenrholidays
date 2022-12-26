@@ -4,7 +4,7 @@ import Destination from "./Components/Destination";
 import HomePage from "./Pages/HomePage";
 import DomesticPackages from "./Pages/PackagesPage/Domestic";
 import InternationalPackages from "./Pages/PackagesPage/International";
-
+import domDest from "./JSON/domestic.json";
 function App() {
   return (
     <>
@@ -39,7 +39,18 @@ function App() {
               </CommonContainer>
             } />
 
-
+          {
+            domDest.map((dest) => {
+              return (
+                <Route path={`${dest.path}`}
+                  element={
+                    <CommonContainer>
+                      <Destination description={dest.description} title={dest.place} image={dest.img}/>
+                    </CommonContainer>
+                  } />
+              )
+            })
+          }
         </Routes>
 
 

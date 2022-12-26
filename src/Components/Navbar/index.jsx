@@ -46,8 +46,7 @@ export default function Header() {
                 <NavLink to={'/'} >
                     <div className='flex justify-center items-center'>
                         <div className="logo">
-                            <img className='w-[70px] lg:w-[120px]' src="assets/logo.png" alt="" />
-                  
+                            <img className='w-[70px] lg:w-[120px]' src="/assets/logo.png" alt="" />
                         </div>
                     </div>
                 </NavLink>

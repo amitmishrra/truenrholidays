@@ -3,48 +3,56 @@
         "place": "Kashmir",
         "img" : "assets/domestic/0.jpg",
         "pricing" : "₹ 10,000",
-        "path" : "/domesticPackages/kashmir"
+        "path" : "/domesticPackages/kashmir",
+        "description" : " This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent. This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent."
     },
     {
         "place": "Himachal",
         "img" : "assets/domestic/1.jpg",
         "pricing" : "₹ 10,000",
-        "path" : "/domesticPackages/kashmir"
+        "path" : "/domesticPackages/Himachal",
+        "description" : " This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent. This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent."
     },
     {
         "place": "North East India",
         "img" : "assets/domestic/2.jpg",
         "pricing" : "₹ 10,000",
-        "path" : "/North_East_India"
+        "path" : "/North_East_India",
+        "description" : " This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent. This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent."
     },
     {
         "place": "Andaman",
         "img" : "assets/domestic/3.jpg",
         "pricing" : "₹ 10,000",
-        "path" : "/domesticPackages/Andaman"
+        "path" : "/domesticPackages/Andaman",
+        "description" : " This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent. This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent."
     },
     {
         "place": "Kerala",
         "img" : "assets/domestic/4.jpg",
         "pricing" : "₹ 10,000",
-        "path" : "/domesticPackages/Kerala"
+        "path" : "/domesticPackages/Kerala",
+        "description" : " This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent. This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent."
     },
     {
         "place": "Rajasthan",
         "img" : "assets/domestic/5.jpg",
         "pricing" : "₹ 10,000",
-        "path" : "/domesticPackages/Rajasthan"
+        "path" : "/domesticPackages/Rajasthan",
+        "description" : " This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent. This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent."
     },
     {
         "place": "Gujarat",
         "img" : "assets/domestic/6.jpg",
         "pricing" : "₹ 10,000",
-        "path" : "/domesticPackages/Gujarat"
+        "path" : "/domesticPackages/Gujarat",
+        "description" : " This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent. This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent."
     },
     {
         "place": "Madhya Pradesh",
         "img" : "assets/domestic/7.jpg",
         "pricing" : "₹ 10,000",
-        "path" : "/domesticPackages/Madhya_Pradesh"
+        "path" : "/domesticPackages/Madhya_Pradesh",
+        "description" : " This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent. This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent."
     }
 ]

@@ -47,7 +47,7 @@ export default function Header() {
                 <div className={active} >
                     <ul className='appleFont' >
                         <li onClick={navToggle}><NavLink  className={activeIndex == 0 ? 'active_item' : 'menu_item'} to={'/'} > Home </NavLink></li>
-                        <li onClick={navToggle}><NavLink  className={activeIndex == 1 ? 'active_item ' : 'menu_item'} to={'/packages'} > Packages </NavLink></li>
+                        <li onClick={navToggle}><NavLink  className={activeIndex == 1 ? 'active_item ' : 'menu_item'} to={'/domesticPackages'} > Packages </NavLink></li>
                         <li onClick={navToggle}><NavLink  className={activeIndex == 2 ? 'active_item ' : 'menu_item'} to={'/about'} > About Us </NavLink></li>
                         <li onClick={navToggle}><NavLink  className={activeIndex === 3 ? 'active_item ' : 'menu_item'} to={'/contact'} > Contact </NavLink></li>
                     </ul>

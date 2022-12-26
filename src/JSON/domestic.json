@@ -1,34 +1,50 @@
 [
     {
         "place": "Kashmir",
-        "img" : "assets/domestic/0.jpg"
+        "img" : "assets/domestic/0.jpg",
+        "pricing" : "₹ 10,000",
+        "path" : "/domesticPackages#kashmir"
     },
     {
         "place": "Himachal",
-        "img" : "assets/domestic/1.jpg"
+        "img" : "assets/domestic/1.jpg",
+        "pricing" : "₹ 10,000",
+        "path" : "/domesticPackages#kashmir"
     },
     {
         "place": "North East India",
-        "img" : "assets/domestic/2.jpg"
+        "img" : "assets/domestic/2.jpg",
+        "pricing" : "₹ 10,000",
+        "path" : "/North_East_India"
     },
     {
         "place": "Andaman",
-        "img" : "assets/domestic/3.jpg"
+        "img" : "assets/domestic/3.jpg",
+        "pricing" : "₹ 10,000",
+        "path" : "/domesticPackages#Andaman"
     },
     {
         "place": "Kerala",
-        "img" : "assets/domestic/4.jpg"
+        "img" : "assets/domestic/4.jpg",
+        "pricing" : "₹ 10,000",
+        "path" : "/domesticPackages#Kerala"
     },
     {
         "place": "Rajasthan",
-        "img" : "assets/domestic/5.jpg"
+        "img" : "assets/domestic/5.jpg",
+        "pricing" : "₹ 10,000",
+        "path" : "/domesticPackages#Rajasthan"
     },
     {
         "place": "Gujarat",
-        "img" : "assets/domestic/6.jpg"
+        "img" : "assets/domestic/6.jpg",
+        "pricing" : "₹ 10,000",
+        "path" : "/domesticPackages#Gujarat"
     },
     {
         "place": "Madhya Pradesh",
-        "img" : "assets/domestic/7.jpg"
+        "img" : "assets/domestic/7.jpg",
+        "pricing" : "₹ 10,000",
+        "path" : "/domesticPackages#Madhya_Pradesh"
     }
 ]

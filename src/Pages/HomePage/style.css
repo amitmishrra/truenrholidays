@@ -4,11 +4,12 @@
     background-size: cover;
 }
 .getStartedButton{
+    display: none;
     border: none;
     background-color: #2092be;
     color: white;
     height: 50px;
-    border-radius: 15px;
+    border-radius: 10px;
     padding-left: 16px;
     padding-right: 16px;
     transition: 0.3s;
@@ -53,7 +54,7 @@
     background-color: #2092be;
     color: white;
     height: 40px;
-    border-radius: 15px;
+    border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
     transition: 0.3s;

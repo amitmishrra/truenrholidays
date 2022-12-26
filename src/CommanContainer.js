@@ -8,7 +8,9 @@ const CommonContainer = ({children}) => {
         <>
         <Header/>
       <div className="lg:pl-[120px]">
-      {children}
+     <div className="min-h-[100vh]">
+     {children}
+     </div>
       <Footer/>
       </div>
         

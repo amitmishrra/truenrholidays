@@ -1,7 +1,89 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import "./style.css"
+import Snackbar from '@mui/material/Snackbar';
+import MuiAlert from '@mui/material/Alert';
+import emailjs from '@emailjs/browser';
+
 export default function Destination({ description, title, image, duration, places, offer, pricing }) {
+
+  const [name, setName] = useState('');
+  const [mail, setMail] = useState('');
+  const [number, setNumber] = useState('');
+  const [passanger, setPassangers] = useState('');
+  const [date, setTravelDate] = useState('');
+  const [address, setAddress] = useState('');
+  const [message, setMessage] = useState('Please enter valid details.');
+  const [valid, setValid] = useState(false);
+  const [open, setOpen] = React.useState(false);
+  const [booked, setBooked] = useState(false);
+
+  let messageData = {
+    name : name,
+    mail : mail,
+    number : number,
+    passanger : passanger,
+    date : date,
+    address : address,
+  }
+
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const Alert = React.forwardRef(function Alert(props, ref) {
+    return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+  });
+
+
+  const validate = () => {
+    if (name.length <= 3) {
+      setMessage('Please enter valid name.');
+      setValid(false);
+    }
+
+    else if (!mail.includes('@') || !mail.includes('.')) {
+      setMessage('Please enter valid email.');
+      setValid(false);
+    }
+
+    else if (number.length !== 10 || isNaN(number)) {
+      setMessage('Please enter valid number.');
+      setValid(false);
+    }
+
+    else if (passanger.length === 0) {
+      setMessage('Please enter number of passangers.');
+      setValid(false);
+    }
+    else {
+      setValid(true);
+    }
+  }
+
+
+  const sendMessage = () => {
+    emailjs.send('service_ygxsvyg', 'template_vvl4n62', messageData, '4_OJS42EnesA_bld3')
+        .then((result) => {
+            console.log(result.text);
+            setBooked(true);
+            setMessage('Your booking has been confirmed. Please check your email for more details.');
+        }, (error) => {
+            console.log(error.text);
+            setBooked(false);
+            setValid(false);
+            setMessage('Something went wrong. Please try again.');
+        });
+}
+
+  const handleSubmit = () => {
+    if(valid){
+      sendMessage();
+    }
+    setOpen(true);
+  }
+
   return (
     <div className='md:p-8 pt-[80px] px-4'>
       <div className='cursiveFont text-[55px] md:text-[60px] text-[#246883] pl-2'>
@@ -32,23 +114,25 @@ export default function Destination({ description, title, image, duration, place
       <div className="bookingSection mb-8">
         <div className="cursiveFont text-[55px] md:text-[60px] text-center mt-8 text-[#246883]"> Book Now </div>
 
-        <form className="form w-[90%] md:w-[50%] flex flex-col textFont m-auto p-4 rounded-[10px] shadow-2xl py-8">
-          <input className='inputs w-[97%] md:w-[350px] shadow-md' required  placeholder='Full Name' type="text" />
-          <input className='inputs w-[97%] md:w-[350px] shadow-md' required placeholder='Email' type="mail" />
-          <input className='inputs w-[97%] md:w-[350px] shadow-md' required placeholder='Number' type="tel" />
-          <input className='inputs w-[97%] md:w-[350px] shadow-md' required placeholder='Passangers' type="number" />
-          <input className='inputs w-[97%] md:w-[350px] shadow-md' required placeholder='Date' type="date" />
+        <div className="form w-[90%] md:w-[40%] flex flex-col textFont m-auto p-4 rounded-[10px] shadow-2xl py-8">
+          <input className='inputs w-[97%] md:w-[350px] shadow-md' required placeholder='Full Name' type="text" value={name} onChange={(e) => { setName(e.target.value); validate(); }} />
+          <input className='inputs w-[97%] md:w-[350px] shadow-md' required placeholder='Email' type="mail" value={mail} onChange={(e) => { setMail(e.target.value); validate(); }} />
+          <input className='inputs w-[97%] md:w-[350px] shadow-md' required placeholder='Number' type="tel" value={number} onChange={(e) => { setNumber(e.target.value); validate(); }} />
+          <input className='inputs w-[97%] md:w-[350px] shadow-md' required placeholder='Passangers' type="number" value={passanger} onChange={(e) => { setPassangers(e.target.value); validate(); }} />
+          <input className='inputs w-[97%] md:w-[350px] shadow-md' required placeholder='Date' type="date" value={date} onChange={(e) => { setTravelDate(e.target.value); validate(); }} />
+          <input className='inputs w-[97%] md:w-[350px] shadow-md' required placeholder='Address' type="text" value={address} onChange={(e) => { setAddress(e.target.value); validate(); }} />
 
           <div className='w-[90%] md:w-[350px] m-auto mt-4'>
-            <button type='submit' className='exploerButton'>Book Now</button>
+            <button onClick={handleSubmit} className={booked ? "booked" : 'bookButton'} disabled={booked ? true : false} >{booked ? "Booked ✓" : "Book Now"}</button>
           </div>
-        </form>
 
-
+          <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+            <Alert onClose={handleClose} severity={valid? "success" : "error"} sx={{ width: '100%' }}>
+              {message}
+            </Alert>
+          </Snackbar>
+        </div>
       </div>
-
-
-
     </div>
   )
 }

@@ -13,3 +13,33 @@
     margin-bottom: 15px;
     padding: 10px;
 }
+
+.bookButton{
+    border: none;
+    background-color: #2092be;
+    color: white;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.bookButton:hover{
+    background-color: #246883;
+    color: rgb(197, 197, 197);
+}
+
+.booked{
+    border: none;
+    color: white;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.3s;
+    font-size: 15px;
+    background-color: rgb(52, 156, 108);
+    cursor: not-allowed;
+}

@@ -32,13 +32,6 @@ function App() {
               </CommonContainer>
             } />
 
-          <Route path="/internationalPackages/Thailand"
-            element={
-              <CommonContainer>
-                <Destination />
-              </CommonContainer>
-            } />
-
           {
             domDest.map((dest) => {
               return (

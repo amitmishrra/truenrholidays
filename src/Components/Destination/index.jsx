@@ -17,6 +17,7 @@ export default function Destination({ description, title, image, duration, place
   const [valid, setValid] = useState(false);
   const [open, setOpen] = React.useState(false);
   const [booked, setBooked] = useState(false);
+  const [dateType, setDateType] = useState('text');
 
   let messageData = {
     name : name,
@@ -25,6 +26,7 @@ export default function Destination({ description, title, image, duration, place
     passanger : passanger,
     date : date,
     address : address,
+    destination : title,
   }
 
 
@@ -53,7 +55,7 @@ export default function Destination({ description, title, image, duration, place
       setValid(false);
     }
 
-    else if (passanger.length === 0) {
+    else if (passanger.length === 0 && passanger <= 0) {
       setMessage('Please enter number of passangers.');
       setValid(false);
     }
@@ -115,14 +117,14 @@ export default function Destination({ description, title, image, duration, place
         <div className="cursiveFont text-[55px] md:text-[60px] text-center mt-8 text-[#246883]"> Book Now </div>
 
         <div className="form w-[90%] md:w-[40%] flex flex-col textFont m-auto p-4 rounded-[10px] shadow-2xl py-8">
-          <input className='inputs w-[97%] md:w-[350px] shadow-md' required placeholder='Full Name' type="text" value={name} onChange={(e) => { setName(e.target.value); validate(); }} />
-          <input className='inputs w-[97%] md:w-[350px] shadow-md' required placeholder='Email' type="mail" value={mail} onChange={(e) => { setMail(e.target.value); validate(); }} />
-          <input className='inputs w-[97%] md:w-[350px] shadow-md' required placeholder='Number' type="tel" value={number} onChange={(e) => { setNumber(e.target.value); validate(); }} />
-          <input className='inputs w-[97%] md:w-[350px] shadow-md' required placeholder='Passangers' type="number" value={passanger} onChange={(e) => { setPassangers(e.target.value); validate(); }} />
-          <input className='inputs w-[97%] md:w-[350px] shadow-md' required placeholder='Date' type="date" value={date} onChange={(e) => { setTravelDate(e.target.value); validate(); }} />
-          <input className='inputs w-[97%] md:w-[350px] shadow-md' required placeholder='Address' type="text" value={address} onChange={(e) => { setAddress(e.target.value); validate(); }} />
+          <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='Full Name' type="text" value={name} onChange={(e) => { setName(e.target.value); validate(); }} />
+          <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='Email' type="mail" value={mail} onChange={(e) => { setMail(e.target.value); validate(); }} />
+          <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='Number' type="tel" value={number} onChange={(e) => { setNumber(e.target.value); validate(); }} />
+          <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='Passangers' type="number" value={passanger} onChange={(e) => { setPassangers(e.target.value); validate(); }} />
+          <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder="MM/DD/YYYY" onFocus={()=>{setDateType("date")}}  type={dateType} value={date} onChange={(e) => { setTravelDate(e.target.value); validate(); }} />
+          <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='Address' type="text" value={address} onChange={(e) => { setAddress(e.target.value); validate(); }} />
 
-          <div className='w-[90%] md:w-[350px] m-auto mt-4'>
+          <div className='w-[90%] md:w-[80%] m-auto mt-4'>
             <button onClick={handleSubmit} className={booked ? "booked" : 'bookButton'} disabled={booked ? true : false} >{booked ? "Booked ✓" : "Book Now"}</button>
           </div>
 

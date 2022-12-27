@@ -5,7 +5,7 @@
         "pricing" : "₹ 10,000",
         "path" : "/domesticPackages/kashmir",
         "description" : "Soak your memories in a warm cup of Kahwah Tea, while indulging in the varied landscapes of Kashmir. Take in the crisp misty air, while gorging on warm Kashmiri pulao and home-made Rista. Feel your heart synchronize with the gushing waters that travel from the glaciers above. Dust the snow off your shoulders after a long trek up a hill and watch the sun-kissed, snow-capped mountains. A valley between the Great Himalayan range and the Pir Panjal mountain range, Kashmir is a place of beautiful simplicity and pristine natural beauty. Kashmir is painted with a unique culture that keeps you intrigued throughout your journey, from Srinagar to Sonamarg and Gulmarg till Pahalgam.",
-        "places" : "Srinagar, Gulmarg, Pahalgam",
+        "places" : "  Srinagar, Gulmarg, Pahalgam",
         "duration" : "5 Nights / 6 Days",
         "offer" : "15% off on first booking."
     },
@@ -14,48 +14,63 @@
         "img" : "assets/domestic/1.jpg",
         "pricing" : "₹ 10,000",
         "path" : "/domesticPackages/Himachal",
-        "description" : " This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent. This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent."
+        "description" : "Himachal Pradesh can be easily said to be one of the most beautiful states in incredible India. The stellar Himalayas dominate much of the state’s landscape that comprises of hills, plains, lakes, and rivers. This awe-inspiring beauty catches the essential standards of the state’s massive Himalayan Alps, its luxuriant forest, picturesque hamlets and neatly planned cities and towns. The extravagant beauty of Himachal Pradesh displays unique transformational kaleidoscope throughout different seasons. Himachal Pradesh feeds the Indus and the Ganges. Himachal Pradesh will weave unforgettable memories for you. This scenic state will greet you with an assortment of green meadows, snow-peaked mountains, meandering streams, apple orchards and much more. This enigmatic place is your actual dreamland. This is a fascinating paradise for all kinds of tourists. You don’t have to ponder over which places to visit. Travelites is here to give you a rundown of a few of the best places to visit in Himachal Pradesh.",
+        "places" : "  City 1,   City 2,   City 3",
+        "duration" : "5 Nights / 6 Days",
+        "offer" : "15% off on first booking."
     },
     {
         "place": "North East India",
         "img" : "assets/domestic/2.jpg",
         "pricing" : "₹ 10,000",
         "path" : "/North_East_India",
-        "description" : " This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent. This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent."
+        "description" : "A serene land tucked up in the lap of mighty Himalayas, the North East regions in India is bestowed with picturesque locale and inexorable culture.    The vast stretch of land located on the foothills of Himalayas, is a glorious heritage of art, culture and festivities. The tropical beauty of India, finds itself an all new meaning when we enter this paradise of tranquility. The serene ambience and salubrious climate of the region attracts tourists from all over the world. It almost feels like the valley casts a magical spell upon its visitors to replenish their soul making them feel rejuvenated.The widely scattered archeological specimens in the region speak aloud about the mythological significance of this part of the country, the North East region of our country bears testimony to our rich cultural heritage. With every step you take to explore the region, you will feel the history of strong faith and ancient traditional beliefs unfold in front of your eyes.",
+        "places" : "  City 1,   City 2,   City 3",
+        "duration" : "5 Nights / 6 Days",
+        "offer" : "15% off on first booking."
     },
     {
         "place": "Andaman",
         "img" : "assets/domestic/3.jpg",
         "pricing" : "₹ 10,000",
         "path" : "/domesticPackages/Andaman",
-        "description" : " This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent. This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent."
+        "description" : "Andaman and Nicobar Islands have been recognised as an eco-friendly tourist’s destination. As a tourist paradise, these islands have something very special to offer like Cellular Jail, Ross Island and Havelock Island. The Andaman tropical evergreen rain forests, beautiful silver sandy beaches, serpentine mangrove-lines creeks, marine life abounding in rare species of plants, animals, corals, etc., provide a memorable experience to the tourists. There is tremendous scope for enjoying nature in the beach resorts, water sports and adventure water sports, adventure tourism like trekking, Island camping, Nature trail, Scuba Diving, etc. The Andaman and Nicobar Islands are a group of islands in the Bay of Bengal, about 1,000 kilometres east of India's mainland. The islands are home to some of the most beautiful beaches in the world. The Andaman and Nicobar Islands are a group of islands in the Bay of Bengal, about 1,000 kilometres east of India's mainland. The islands are home to some of the most beautiful beaches in the world.",
+        "places" : "  City 1,   City 2,   City 3",
+        "duration" : "5 Nights / 6 Days",
+        "offer" : "15% off on first booking."
     },
     {
         "place": "Kerala",
         "img" : "assets/domestic/4.jpg",
         "pricing" : "₹ 10,000",
         "path" : "/domesticPackages/Kerala",
-        "description" : " This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent. This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent."
+        "description" : "Kerala is blessed with a unique set of geographical features that have made it one of the most sought after tourist destinations in Asia. A long shoreline with serene beaches, tranquil stretches of emerald backwaters, lush hill stations and exotic wildlife, are just a few of the wonders. Most of the state is engulfed in rich greenery which ensures a very calming experience at all times. Bestowed with a pleasant and equable climate throughout the year, Kerala is a tropical land where one can relax and be at ease. Kerala is a  tropical paradise where you can paddle in tranquil backwaters, trek the rocky Western Ghats, chase the mists in the hill stations, rejuvenate with pristine Nature and Ayurvedic treatments, hug the unspoiled beaches and so much more.",
+        "places" : "  City 1,   City 2,   City 3",
+        "duration" : "5 Nights / 6 Days",
+        "offer" : "15% off on first booking."
     },
     {
         "place": "Rajasthan",
         "img" : "assets/domestic/5.jpg",
         "pricing" : "₹ 10,000",
         "path" : "/domesticPackages/Rajasthan",
-        "description" : " This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent. This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent."
+        "description" : "Rajasthan, the Land of Kings is synonymous to heroism, royalty and honour. Historic tales of battles fought and romance of the riches adorn the walls of the state. Established in the era marked with wartime ballads yet living in the modern period, this beautiful region is a travellers' destination. Those looking out for the remnants of the past should not pass up a trip to Rajasthan. For wanderers interested in adventures at the various landscapes should definitely get a glimpse of this venturesome state. And for the ones who plan to have a quiet sojourn gazing at the beauty of the golden sand dunes, Rajasthan tops your list. This land is a colourful melange of massive forts, stunning palaces, diverse cultures, delectable cuisines and warm people, set amidst a rugged yet inviting landscape. Come, explore the miscellany of the old and the new in Rajasthan, a glittering jewel of India."
     },
     {
         "place": "Gujarat",
         "img" : "assets/domestic/6.jpg",
         "pricing" : "₹ 10,000",
         "path" : "/domesticPackages/Gujarat",
-        "description" : " This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent. This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent."
+        "description" : "Gujarat offers all that a national or international tourist looks for - a wide range of diverse destinations and attractions. In addition, strong logistic connectivity, excellent communication facilities, adequate health infrastructure, round the clock power supply even in the remotest area, safety and security and above all the hospitable nature of the people make Gujarat a prime destination in India. People who come to Gujarat get bonded with its charisma because, life itself is a celebration here. Welcome to Gujarat, the land of heritage, wildlife, fun, frolic and food."
     },
     {
         "place": "Madhya Pradesh",
         "img" : "assets/domestic/7.jpg",
         "pricing" : "₹ 10,000",
         "path" : "/domesticPackages/Madhya_Pradesh",
-        "description" : " This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent. This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent."
+        "description" : "Madhya Pradesh can be described as the best state of the nation when it comes to the diversity of its tourism destinations.Madhya Pradesh is known as the “Heart of India” because of a lot many things that it has to offer. It has been home to cultural and spiritual heritage of almost all the religions. Innumerable monuments, intricately carved temples, stupas, forts and palaces are dotted all over the State. The natural beauty of the state is equally varied. Consisting largely of a plateau, the State has everything, from mighty mountain ranges to meandering rivers to miles of verdant forests. In fact a large part of Madhya Pradesh is under the forest cover, offering a unique and exciting panorama of wildlife.",
+        "places" : "  City 1,   City 2,   City 3",
+        "duration" : "5 Nights / 6 Days",
+        "offer" : "15% off on first booking."
     }
 ]

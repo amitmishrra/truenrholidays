@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 import "./style.css"
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
+import emailjs from '@emailjs/browser';
 
 export default function Destination({ description, title, image, duration, places, offer, pricing }) {
 
@@ -11,9 +12,21 @@ export default function Destination({ description, title, image, duration, place
   const [number, setNumber] = useState('');
   const [passanger, setPassangers] = useState('');
   const [date, setTravelDate] = useState('');
+  const [address, setAddress] = useState('');
   const [message, setMessage] = useState('Please enter valid details.');
   const [valid, setValid] = useState(false);
   const [open, setOpen] = React.useState(false);
+  const [booked, setBooked] = useState(false);
+
+  let messageData = {
+    name : name,
+    mail : mail,
+    number : number,
+    passanger : passanger,
+    date : date,
+    address : address,
+  }
+
 
   const handleClose = () => {
     setOpen(false);
@@ -25,10 +38,6 @@ export default function Destination({ description, title, image, duration, place
 
 
   const validate = () => {
-    // console.log(name, mail, number, passanger, date);
-
-    console.log(valid, message);
-
     if (name.length <= 3) {
       setMessage('Please enter valid name.');
       setValid(false);
@@ -50,13 +59,28 @@ export default function Destination({ description, title, image, duration, place
     }
     else {
       setValid(true);
-      setMessage('Booking Successful.');
     }
   }
 
 
+  const sendMessage = () => {
+    emailjs.send('service_ygxsvyg', 'template_vvl4n62', messageData, '4_OJS42EnesA_bld3')
+        .then((result) => {
+            console.log(result.text);
+            setBooked(true);
+            setMessage('Your booking has been confirmed. Please check your email for more details.');
+        }, (error) => {
+            console.log(error.text);
+            setBooked(false);
+            setValid(false);
+            setMessage('Something went wrong. Please try again.');
+        });
+}
+
   const handleSubmit = () => {
-    console.log(valid, message);
+    if(valid){
+      sendMessage();
+    }
     setOpen(true);
   }
 
@@ -90,15 +114,16 @@ export default function Destination({ description, title, image, duration, place
       <div className="bookingSection mb-8">
         <div className="cursiveFont text-[55px] md:text-[60px] text-center mt-8 text-[#246883]"> Book Now </div>
 
-        <div className="form w-[90%] md:w-[50%] flex flex-col textFont m-auto p-4 rounded-[10px] shadow-2xl py-8">
+        <div className="form w-[90%] md:w-[40%] flex flex-col textFont m-auto p-4 rounded-[10px] shadow-2xl py-8">
           <input className='inputs w-[97%] md:w-[350px] shadow-md' required placeholder='Full Name' type="text" value={name} onChange={(e) => { setName(e.target.value); validate(); }} />
           <input className='inputs w-[97%] md:w-[350px] shadow-md' required placeholder='Email' type="mail" value={mail} onChange={(e) => { setMail(e.target.value); validate(); }} />
           <input className='inputs w-[97%] md:w-[350px] shadow-md' required placeholder='Number' type="tel" value={number} onChange={(e) => { setNumber(e.target.value); validate(); }} />
           <input className='inputs w-[97%] md:w-[350px] shadow-md' required placeholder='Passangers' type="number" value={passanger} onChange={(e) => { setPassangers(e.target.value); validate(); }} />
           <input className='inputs w-[97%] md:w-[350px] shadow-md' required placeholder='Date' type="date" value={date} onChange={(e) => { setTravelDate(e.target.value); validate(); }} />
+          <input className='inputs w-[97%] md:w-[350px] shadow-md' required placeholder='Address' type="text" value={address} onChange={(e) => { setAddress(e.target.value); validate(); }} />
 
           <div className='w-[90%] md:w-[350px] m-auto mt-4'>
-            <button onClick={handleSubmit} className='exploerButton' >Book Now</button>
+            <button onClick={handleSubmit} className={booked ? "booked" : 'bookButton'} disabled={booked ? true : false} >{booked ? "Booked ✓" : "Book Now"}</button>
           </div>
 
           <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
@@ -108,9 +133,6 @@ export default function Destination({ description, title, image, duration, place
           </Snackbar>
         </div>
       </div>
-
-
-
     </div>
   )
 }

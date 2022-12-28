@@ -11,22 +11,26 @@ export default function Destination({ description, title, image, duration, place
   const [mail, setMail] = useState('');
   const [number, setNumber] = useState('');
   const [passanger, setPassangers] = useState('');
-  const [date, setTravelDate] = useState('');
+  // const [date, setTravelDate] = useState('');
   const [address, setAddress] = useState('');
+  const [hotel, setHotel] = useState('');
+  const [budget, setBudget] = useState('');
+
   const [message, setMessage] = useState('Please enter valid details.');
   const [valid, setValid] = useState(false);
   const [open, setOpen] = React.useState(false);
   const [booked, setBooked] = useState(false);
-  const [dateType, setDateType] = useState('text');
+  // const [dateType, setDateType] = useState('text');
 
   let messageData = {
-    name : name,
-    mail : mail,
-    number : number,
-    passanger : passanger,
-    date : date,
-    address : address,
-    destination : title,
+    name: name,
+    mail: mail,
+    number: number,
+    passengers: passanger,
+    city : address,
+    hotel: hotel,
+    budget: budget,
+    destination: title,
   }
 
 
@@ -59,6 +63,18 @@ export default function Destination({ description, title, image, duration, place
       setMessage('Please enter number of passangers.');
       setValid(false);
     }
+    else if (hotel.length === 0) {
+      setMessage('Please select a hotel type.');
+      setValid(false);
+    }
+    else if (budget.length === 0) {
+      setMessage('Please select a budget.');
+      setValid(false);
+    }
+    else if (address.length === 0) {
+      setMessage('Please enter your departure City.');
+      setValid(false);
+    }
     else {
       setValid(true);
     }
@@ -67,20 +83,20 @@ export default function Destination({ description, title, image, duration, place
 
   const sendMessage = () => {
     emailjs.send('service_ygxsvyg', 'template_vvl4n62', messageData, '4_OJS42EnesA_bld3')
-        .then((result) => {
-            console.log(result.text);
-            setBooked(true);
-            setMessage('Your booking has been confirmed. Please check your email for more details.');
-        }, (error) => {
-            console.log(error.text);
-            setBooked(false);
-            setValid(false);
-            setMessage('Something went wrong. Please try again.');
-        });
-}
+      .then((result) => {
+        console.log(result.text);
+        setBooked(true);
+        setMessage('Your booking has been confirmed. Please check your email for more details.');
+      }, (error) => {
+        console.log(error.text);
+        setBooked(false);
+        setValid(false);
+        setMessage('Something went wrong. Please try again.');
+      });
+  }
 
   const handleSubmit = () => {
-    if(valid){
+    if (valid) {
       sendMessage();
     }
     setOpen(true);
@@ -120,16 +136,30 @@ export default function Destination({ description, title, image, duration, place
           <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='Full Name' type="text" value={name} onChange={(e) => { setName(e.target.value); validate(); }} />
           <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='Email' type="mail" value={mail} onChange={(e) => { setMail(e.target.value); validate(); }} />
           <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='Number' type="tel" value={number} onChange={(e) => { setNumber(e.target.value); validate(); }} />
-          <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='Passangers' type="number" value={passanger} onChange={(e) => { setPassangers(e.target.value); validate(); }} />
-          <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder="MM/DD/YYYY" onFocus={()=>{setDateType("date")}}  type={dateType} value={date} onChange={(e) => { setTravelDate(e.target.value); validate(); }} />
-          <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='Address' type="text" value={address} onChange={(e) => { setAddress(e.target.value); validate(); }} />
+          <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='No. of Passangesr' type="number" value={passanger} onChange={(e) => { setPassangers(e.target.value); validate(); }} />
+          {/* <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder="MM/DD/YYYY" onFocus={()=>{setDateType("date")}}  type={dateType} value={date} onChange={(e) => { setTravelDate(e.target.value); validate(); }} /> */}
+          <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='Departure city' type="text" value={address} onChange={(e) => { setAddress(e.target.value); validate(); }} />
+          <select className='inputs w-[97%] md:w-[80%] shadow-md' required value={hotel} onChange={(e) => { setHotel(e.target.value); validate(); }}>
+            <option value="" disabled selected>Select Hotel</option>
+            <option value="5 Star">5 Star</option>
+            <option value="4 Star">4 Star</option>
+            <option value="3 Star">3 Star</option>
+          </select>
+
+          <select className='inputs w-[97%] md:w-[80%] shadow-md' required value={budget} onChange={(e) => { setBudget(e.target.value); validate(); }}>
+            <option value="" disabled selected>Select Budget</option>
+            <option value="Less than ₹15,000">Less than ₹15,000</option>
+            <option value="Medium - ₹15,000 - ₹30,000">₹15,000 - ₹30,000</option>
+            <option value="High - ₹30,000 - ₹50,000">₹30,000 - ₹50,000</option>
+            <option value="Luxury-₹50,000 - More">₹50,000 - More</option>
+          </select>
 
           <div className='w-[90%] md:w-[80%] m-auto mt-4'>
             <button onClick={handleSubmit} className={booked ? "booked" : 'bookButton'} disabled={booked ? true : false} >{booked ? "Booked ✓" : "Book Now"}</button>
           </div>
 
           <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
-            <Alert onClose={handleClose} severity={valid? "success" : "error"} sx={{ width: '100%' }}>
+            <Alert onClose={handleClose} severity={valid ? "success" : "error"} sx={{ width: '100%' }}>
               {message}
             </Alert>
           </Snackbar>

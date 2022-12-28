@@ -6,6 +6,7 @@ import DomesticPackages from "./Pages/PackagesPage/Domestic";
 import InternationalPackages from "./Pages/PackagesPage/International";
 import domDest from "./JSON/domestic.json";
 import intDest from "./JSON/international.json";
+import About from "./Pages/AboutPage";
 function App() {
   return (
     <>
@@ -33,26 +34,33 @@ function App() {
               </CommonContainer>
             } />
 
+          <Route path="/about"
+            element={
+              <CommonContainer>
+                <About/>
+              </CommonContainer>
+            } />
+
           {
             domDest.map((dest) => {
               return (
                 <Route path={`${dest.path}`}
                   element={
                     <CommonContainer>
-                      <Destination description={dest.description} title={dest.place} image={dest.img} duration={dest.duration} places={dest.places} offer={dest.offer} pricing={dest.pricing}/>
+                      <Destination description={dest.description} title={dest.place} image={dest.img} duration={dest.duration} places={dest.places} offer={dest.offer} pricing={dest.pricing} />
                     </CommonContainer>
                   } />
               )
             })
           }
 
-{
+          {
             intDest.map((dest) => {
               return (
                 <Route path={`${dest.path}`}
                   element={
                     <CommonContainer>
-                      <Destination description={dest.description} title={dest.country} image={dest.img} duration={dest.duration} places={dest.places} offer={dest.offer} pricing={dest.pricing}/>
+                      <Destination description={dest.description} title={dest.country} image={dest.img} duration={dest.duration} places={dest.places} offer={dest.offer} pricing={dest.pricing} />
                     </CommonContainer>
                   } />
               )

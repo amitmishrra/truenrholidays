@@ -1,5 +1,6 @@
 import React from 'react'
 import "./style.css"
+import { NavLink } from 'react-router-dom'
 export default function Footer() {
     return (
         <div className='footer md:p-8 p-4 m-0'>
@@ -31,10 +32,11 @@ export default function Footer() {
                 <div className='mt-4'>
                     <div className='text-[white] '> Support & Help</div>
                     <div className='text-gray-400'>
-                        About Us
+                        <NavLink to="/about">About Us</NavLink>
                     </div>
-                    <div className='text-gray-400'>Terms & Conditions</div>
-                    <div className='text-gray-400'>Contact Us</div>
+                    <div className='text-gray-400'>
+                    <NavLink to="/contact">Contact Us</NavLink>
+                    </div>
                 </div>
 
             </div>

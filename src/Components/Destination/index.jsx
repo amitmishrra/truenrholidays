@@ -10,7 +10,7 @@ export default function Destination({ description, title, image, duration, place
   const [name, setName] = useState('');
   const [mail, setMail] = useState('');
   const [number, setNumber] = useState('');
-  const [passanger, setPassangers] = useState('');
+  const [passenger, setPassenger] = useState('');
   // const [date, setTravelDate] = useState('');
   const [address, setAddress] = useState('');
   const [hotel, setHotel] = useState('');
@@ -26,7 +26,7 @@ export default function Destination({ description, title, image, duration, place
     name: name,
     mail: mail,
     number: number,
-    passengers: passanger,
+    passengers: passenger,
     city : address,
     hotel: hotel,
     budget: budget,
@@ -59,8 +59,8 @@ export default function Destination({ description, title, image, duration, place
       setValid(false);
     }
 
-    else if (passanger.length === 0 && passanger <= 0) {
-      setMessage('Please enter number of passangers.');
+    else if (passenger.length === 0 && passenger == 0) {
+      setMessage('Please enter number of passengers.');
       setValid(false);
     }
     else if (hotel.length === 0) {
@@ -79,6 +79,15 @@ export default function Destination({ description, title, image, duration, place
       setValid(true);
     }
   }
+
+  // const sendMsgToUser = () => {
+  //   emailjs.send('service_ygxsvyg', 'template_8x8x9x9', messageData, '4_OJS42EnesA_bld3')
+  //     .then((result) => {
+  //       console.log(result.text);
+  //     }, (error) => {
+  //       console.log(error.text);
+  //     });
+  // }
 
 
   const sendMessage = () => {
@@ -133,10 +142,10 @@ export default function Destination({ description, title, image, duration, place
         <div className="cursiveFont text-[55px] md:text-[60px] text-center mt-8 text-[#246883]"> Book Now </div>
 
         <div className="form w-[90%] md:w-[40%] flex flex-col textFont m-auto p-4 rounded-[10px] shadow-2xl py-8">
-          <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='Full Name' type="text" value={name} onChange={(e) => { setName(e.target.value); validate(); }} />
+          <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='Full Name' type="text" value={name}  onChange={(e) => { setName(e.target.value); validate(); }} />
           <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='Email' type="mail" value={mail} onChange={(e) => { setMail(e.target.value); validate(); }} />
           <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='Number' type="tel" value={number} onChange={(e) => { setNumber(e.target.value); validate(); }} />
-          <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='No. of Passangesr' type="number" value={passanger} onChange={(e) => { setPassangers(e.target.value); validate(); }} />
+          <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='No. of Passengers' type="number" value={passenger} minLength="1" onChange={(e) => { setPassenger(e.target.value); validate(); }} />
           {/* <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder="MM/DD/YYYY" onFocus={()=>{setDateType("date")}}  type={dateType} value={date} onChange={(e) => { setTravelDate(e.target.value); validate(); }} /> */}
           <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='Departure city' type="text" value={address} onChange={(e) => { setAddress(e.target.value); validate(); }} />
           <select className='inputs w-[97%] md:w-[80%] shadow-md' required value={hotel} onChange={(e) => { setHotel(e.target.value); validate(); }}>

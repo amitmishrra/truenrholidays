@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import "./style.css"
 import Snackbar from '@mui/material/Snackbar';
@@ -6,6 +6,10 @@ import MuiAlert from '@mui/material/Alert';
 import emailjs from '@emailjs/browser';
 
 export default function Destination({ description, title, image, duration, places, offer, pricing }) {
+
+  useEffect(() => {
+    document.title = "True NR Holidays | " + title
+  }, [])
 
   const [name, setName] = useState('');
   const [mail, setMail] = useState('');

@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ContactIcons from '../../Components/Contact'
 
 export default function About() {
+    useEffect(() => {
+        document.title = "True NR Holidays | About Us "
+    })
     return (
         <div className='md:p-8 pt-[80px] px-4 pb-8'>
             <div className='cursiveFont text-[55px] md:text-[60px] text-[#246883] '>Hello Wanderer,</div>

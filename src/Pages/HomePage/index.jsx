@@ -8,6 +8,9 @@ export default function HomePage() {
     const [internationalIndex, setInternationalIndex] = useState(0);
     const [domesticIndex, setDomesticIndex] = useState(0);
 
+    useEffect(() => {
+        document.title = "True NR Holidays | Home"
+    })
 
     useEffect(() => {
         const intervalId = setInterval(() => {

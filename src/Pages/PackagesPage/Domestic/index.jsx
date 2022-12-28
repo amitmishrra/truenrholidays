@@ -1,9 +1,13 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import "./style.css"
 import domData from "../../../JSON/domestic.json"
 import { NavLink } from 'react-router-dom'
 
 export default function DomesticPackages() {
+    useEffect(() => {
+        document.title = "True NR Holidays | Domestic Packages"
+
+    })
     return (
         <div className='md:p-8 pt-[80px]'>
             <div className='cursiveFont text-[55px] md:text-[60px] text-[#246883] pl-2'>

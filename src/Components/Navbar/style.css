@@ -120,6 +120,7 @@
         display: block;
         cursor: pointer;
         transition: 0.4s;
+        z-index: 10;
     }
 
     .navToggler div {
@@ -140,7 +141,7 @@
         background-color: #c9c9c9;
         z-index: -10;
         transform: translatex(100%);
-   
+        z-index: 10;
         transition: 0.5s;
     }
 

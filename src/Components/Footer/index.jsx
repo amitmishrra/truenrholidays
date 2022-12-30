@@ -32,10 +32,10 @@ export default function Footer() {
                 <div className='mt-4'>
                     <div className='text-[white] '> Support & Help</div>
                     <div className='text-gray-400'>
-                        <NavLink to="/about">About Us</NavLink>
+                        <NavLink onClick={()=>{window.scrollTo(0, 0)}} to="/about">About Us</NavLink>
                     </div>
                     <div className='text-gray-400'>
-                    <NavLink to="/contact">Contact Us</NavLink>
+                    <NavLink onClick={()=>{window.scrollTo(0, 0)}} to="/contact">Contact Us</NavLink>
                     </div>
                 </div>
 

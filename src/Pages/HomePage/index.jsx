@@ -85,7 +85,7 @@ export default function HomePage() {
                             </div>
 
                             <div className="buton">
-                                <NavLink to="/internationalPackages" className='exploerButton rounded-[10px] py-2 shadow-2xl'>
+                                <NavLink to="/internationalPackages" onClick={()=>{window.scrollTo(0, 0)}} className='exploerButton rounded-[10px] py-2 shadow-2xl'>
                                     Explore More
                                 </NavLink>
                             </div>
@@ -99,7 +99,7 @@ export default function HomePage() {
                             </div>
 
                             <div className="buton">
-                                <NavLink to="/domesticPackages" className='exploerButton rounded-[10px] py-2 shadow-2xl'>
+                                <NavLink to="/domesticPackages" onClick={()=>{window.scrollTo(0, 0)}} className='exploerButton rounded-[10px] py-2 shadow-2xl'>
                                     Explore More
                                 </NavLink>
                             </div>

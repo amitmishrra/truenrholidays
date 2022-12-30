@@ -29,7 +29,7 @@ export default function InternationalPackages() {
                                         Starting from : {data.pricing}
                                     </div>
                                     <div className='my-4 '>
-                                        <NavLink to={data.path} className='exploerButton rounded-[10px] py-2'>Know More</NavLink>
+                                        <NavLink onClick={()=>{window.scrollTo(0, 0)}} to={data.path} className='exploerButton rounded-[10px] py-2'>Know More</NavLink>
                                     </div>
                                 </div>
                             </div>

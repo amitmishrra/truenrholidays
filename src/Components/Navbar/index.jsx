@@ -25,6 +25,8 @@ export default function Header() {
     })
 
     const navToggle = () => {
+        window.scrollTo(0, 0);
+
         active === 'menu' ?
             setActive('menuActive menu') :
             setActive('menu')

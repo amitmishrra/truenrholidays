@@ -35,3 +35,7 @@ code {
 .textFont {
   font-family: 'Poppins', serif;
 }
+
+.icon{
+  font-size: 40px important;
+}

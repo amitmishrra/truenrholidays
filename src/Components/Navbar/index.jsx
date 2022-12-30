@@ -51,7 +51,7 @@ export default function Header() {
                     </div>
                 </NavLink>
                 <div className={active} >
-                    <ul className='appleFont' >
+                    <ul className='textFont' >
                         <li onClick={navToggle}><NavLink  className={activeIndex == 0 ? 'active_item' : 'menu_item'} to={'/'} > Home </NavLink></li>
                         <li onClick={packageToggle} className={'menu_item'} to={''} > Packages<span>{activeArrow}</span> </li>
                         <li className={activeArrow !=  "▲" ? hideoptions : null} onClick={navToggle}><NavLink  className={activeIndex == 1  ? 'active_item '  : 'menu_item ' } to={'/domesticPackages'} >&#9679; Domestic </NavLink></li>

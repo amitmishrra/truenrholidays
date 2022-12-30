@@ -7,6 +7,7 @@ import InternationalPackages from "./Pages/PackagesPage/International";
 import domDest from "./JSON/domestic.json";
 import intDest from "./JSON/international.json";
 import About from "./Pages/AboutPage";
+import Contact from "./Pages/ContactPage";
 function App() {
   return (
     <>
@@ -37,10 +38,16 @@ function App() {
           <Route path="/about"
             element={
               <CommonContainer>
-                <About/>
+                <About />
               </CommonContainer>
             } />
 
+          <Route path="/contact"
+            element={
+              <CommonContainer>
+               <Contact/>
+              </CommonContainer>
+            } />
           {
             domDest.map((dest) => {
               return (

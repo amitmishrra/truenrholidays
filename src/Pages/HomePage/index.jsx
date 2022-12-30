@@ -4,6 +4,7 @@ import serviceData from "../../JSON/services.json"
 import internationDestination from "../../JSON/international.json"
 import domesticDestinantion from "../../JSON/domestic.json"
 import { NavLink } from 'react-router-dom'
+import ScrollDown from '../../Components/ScrollDown'
 export default function HomePage() {
     const [internationalIndex, setInternationalIndex] = useState(0);
     const [domesticIndex, setDomesticIndex] = useState(0);
@@ -30,6 +31,10 @@ export default function HomePage() {
                 <button className='getStartedButton text-[17px] shadow-2xl'>
                     let's get started
                 </button>
+
+                <div className="scrollDown">
+                    <ScrollDown/>
+                </div>
             </div>
 
             <div className="lowerSections maxwidth ">
@@ -192,7 +197,7 @@ export default function HomePage() {
                 </div>
 
                 <div className="cursiveFont text-[35px] md:text-[60px] text-[#246883] text-center mt-12">
-                your destination is waiting for you.
+                    your destination is waiting for you.
                 </div>
             </div>
         </div>

@@ -73,3 +73,8 @@
     border: 5px solid #246883;
     border-radius: 150px;
 }
+
+.scrollDown{
+    position: absolute;
+    bottom: 50px;
+}

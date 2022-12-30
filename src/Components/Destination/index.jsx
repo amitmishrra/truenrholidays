@@ -37,7 +37,6 @@ export default function Destination({ description, title, image, duration, place
     destination: title,
   }
 
-
   const handleClose = () => {
     setOpen(false);
   };

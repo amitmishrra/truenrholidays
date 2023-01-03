@@ -19,10 +19,10 @@ export default function DomesticPackages() {
                     domData.map((data) => {
                         return (
                             <div className="dom-pack rounded-[10px] p-2 shadow-xl mb-8 md:w-[300px] w-[90%]">
-                                <div className=' overflow-hidden h-[230px]'>
-                                    <img src={data.img} className='rounded-[10px] max-h-[230px] w-[100%]' alt="" />
+                                <div className=' overflow-hidden h-[210px]'>
+                                    <img src={data.img} className='rounded-[10px] max-h-[210px] w-[100%]' alt="" />
                                 </div>
-                                <div className='textFont'>
+                                <div className='textFont mt-2'>
                                     <div className='headingFont font-bold text-[19px] text-[#268eb6]'>
                                         {data.place}
                                     </div>

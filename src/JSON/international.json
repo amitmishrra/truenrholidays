@@ -1,9 +1,15 @@
 [
     {
-        "country": "Sri Lank",
+        "country": "Sri Lanka",
         "img" : "assets/international/0.jpg",
         "pricing" : "₹ 50,000",
-        "path" : "/internationalPackages/Sri_Lank"
+        "path" : "/internationalPackages/Sri_Lank",
+        "description" : "Just located southeast of India, Sri Lanka is a hidden gem of the Indian Ocean. Beyond its ancient ruins, beautiful beaches, and amazing wildlife, the island nation has many other stories to uncover. From the Pearl of the Indian Ocean to the world's oldest human-planted tree, here are 15 facts you might not know about Sri Lanka to offer you a glimpse of the intriguing local history and culture. Sri Lanka is known for these two lovely names. Pearl of the Indian Ocean is given to this small island nation probably due to its incredible natural beauty, extraordinary biodiversity as well as its precious gemstones. Besides, the island has a teardrop shape and is off the coast of India, which is easier to see from the map. That’s why it is also called the teardrop of India. Below is a Google map snapshot of Sri Lanka to give you an idea of its location and shape. ",
+        "places" : "   02 Nights in Gangtok, 01 Night in Pelling, 02 Nights in Darjeeling",
+        "duration" : "5 Nights / 6 Days",
+        "offer" : "up to 10% off.",
+        "start" : "Ex Bagdogra Airport",
+        "hotel" : "☆ ☆ ☆"
     },
     {
         "country": "Thailand",

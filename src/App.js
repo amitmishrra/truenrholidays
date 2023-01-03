@@ -118,7 +118,7 @@ function App() {
                 <Route path={`${dest.path}`}
                   element={
                     <CommonContainer>
-                      <Destination description={dest.description} title={dest.place} image={dest.img} duration={dest.duration} places={dest.places} offer={dest.offer} pricing={dest.pricing} />
+                      <Destination description={dest.description} title={dest.place} image={dest.img} duration={dest.duration} places={dest.places} offer={dest.offer} pricing={dest.pricing} hotelType={dest.hotel}  start={dest.start}/>
                     </CommonContainer>
                   } />
               )

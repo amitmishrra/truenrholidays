@@ -67,7 +67,6 @@ export default function Header() {
                     <div className="line2"></div>
                     <div className="line3"></div>
                 </div>
-
             </div>
         </div>
     )

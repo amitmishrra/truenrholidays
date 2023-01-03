@@ -5,7 +5,7 @@ import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
 import emailjs from '@emailjs/browser';
 
-export default function Destination({ description, title, image, duration, places, offer, pricing }) {
+export default function Destination({ description, title, image, duration, places, offer, pricing, hotelType, start }) {
 
   useEffect(() => {
     document.title = "True NR Holidays | " + title
@@ -131,10 +131,12 @@ export default function Destination({ description, title, image, duration, place
           <div>
             <li className="headingFont font-bold text-[16px] mt-4 text-[#246883]"> Duration :  &nbsp; <span className='textFont  text-justify  text-black font-light'>{duration}</span> </li>
             <li className="headingFont font-bold text-[16px] mt-4 text-[#246883]"> Places :  &nbsp; <span className='textFont  text-justify text-black font-light'>{places}</span> </li>
+            <li className="headingFont font-bold text-[16px] mt-4 text-[#246883]">Hotel : &nbsp; <span className='textFont  text-justify text-black font-light'>{hotelType}</span></li>
+            <li className="headingFont font-bold text-[16px] mt-4 text-[#246883]">Starting Point : &nbsp; <span className='textFont  text-justify text-black font-light'>{start}</span></li>
             <li className="headingFont font-bold text-[16px] mt-4 text-[#246883]"> Offer : &nbsp; <span className='textFont  text-justify text-black font-light'>{offer}</span></li>
             <li className="headingFont font-bold text-[16px] mt-4 text-[#246883]">Pricing : &nbsp; <span className='textFont  text-justify text-black font-light'>{pricing}</span></li>
           </div>
-          <div className='mt-4 textFont'> For more information please <NavLink className={"text-[#246883]"} to="/contact"> contact us</NavLink>. </div>
+          <div className='mt-4 textFont'>This cost is based on 02 people Travelling Together. <br /> For more information please <NavLink className={"text-[#246883]"} to="/contact"> contact us</NavLink>. </div>
         </div>
         <div className='w-[100%] md:w-1/2 mx-8 mb-8'>
           <img src={`/${image}`} className=" rounded-[10px] shadow-xl" alt="img" />

@@ -20,13 +20,13 @@ export default function DomesticPackages() {
                         return (
                             <div className="dom-pack rounded-[10px] p-2 shadow-xl mb-8 md:w-[300px] w-[90%]">
                                 <div className=' overflow-hidden h-[230px]'>
-                                    <img src={data.img} className='rounded-[10px]' alt="" />
+                                    <img src={data.img} className='rounded-[10px] max-h-[230px] w-[100%]' alt="" />
                                 </div>
                                 <div className='textFont'>
-                                    <div className='headingFont font-bold text-[21px] text-[#268eb6]'>
+                                    <div className='headingFont font-bold text-[19px] text-[#268eb6]'>
                                         {data.place}
                                     </div>
-                                    <div>
+                                    <div className='text-[15px]'>
                                         Starting from : {data.pricing}
                                     </div>
                                     <div className='my-4 '>

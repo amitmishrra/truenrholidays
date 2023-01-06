@@ -79,7 +79,7 @@ function App() {
        <Routes>
 
           <Route path="/"
-            element={ loading== true ? 
+            element={loading== true ? 
               <CommonContainer>
              <HomePage />
               </CommonContainer> :<Loader/> 

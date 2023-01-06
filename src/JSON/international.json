@@ -14,49 +14,97 @@
     {
         "country": "Thailand",
         "img" : "assets/international/1.jpg",
-        "pricing" : "₹ 50,000",
-        "path" : "/internationalPackages/Thailand"
+        "pricing" : "₹ 35,000",
+        "path" : "/internationalPackages/Thailand",
+        "description" : "Thailand is the country in Southeast Asia most visited by tourists, and for good reason. You can find almost anything here: thick jungle as green as can be, crystal blue waters that feel more like a warm bath than a swim in the ocean, and food that can curl your nose hairs while dancing across your taste buds. Exotic, yet safe; cheap, yet equipped with every modern amenity you need, there is something for every interest and every price bracket, from beach front backpacker bungalows to some of the best luxury hotels in the world. And despite the heavy flow of tourism, Thailand retains its quintessential Thai-ness, with a culture and history all its own and a carefree people famed for their smiles and their fun-seeking sanuk lifestyle.",
+        "places" : "   02 Nights in Bangkok, 03 Nights in Pattaya",
+        "duration" : "5 Nights / 6 Days",
+        "offer" : "up to 10% off.",
+        "start" : "Ex Mumbai / New Delh",
+        "hotel" : "☆ ☆ ☆"
     },
     {
         "country": "Maldives",
         "img" : "assets/international/2.jpg",
         "pricing" : "₹ 50,000",
-        "path" : "/internationalPackages/Maldives"
+        "path" : "/internationalPackages/Maldives",
+        "description" : "",
+        "places" : "",
+        "duration" : "5 Nights / 6 Days",
+        "offer" : "up to 10% off.",
+        "start" : "Ex Bagdogra Airport",
+        "hotel" : "☆ ☆ ☆"
     },
     {
         "country": "Dubai",
         "img" : "assets/international/3.jpg",
         "pricing" : "₹ 50,000",
-        "path" : "/internationalPackages/Dubai"
+        "path" : "/internationalPackages/Dubai",
+        "description" : "",
+        "places" : "",
+        "duration" : "5 Nights / 6 Days",
+        "offer" : "up to 10% off.",
+        "start" : "Ex Bagdogra Airport",
+        "hotel" : "☆ ☆ ☆"
     },
     {
         "country": "Bali",
         "img" : "assets/international/4.jpg",
         "pricing" : "₹ 50,000",
-        "path" : "/internationalPackages/Bali"
+        "path" : "/internationalPackages/Bali",
+        "description" : "",
+        "places" : "   02 Nights in Gangtok, 01 Night in Pelling, 02 Nights in Darjeeling",
+        "duration" : "5 Nights / 6 Days",
+        "offer" : "up to 10% off.",
+        "start" : "Ex Bagdogra Airport",
+        "hotel" : "☆ ☆ ☆"
     },
     {
         "country": "Europe",
         "img" : "assets/international/5.jpg",
         "pricing" : "₹ 50,000",
-        "path" : "/internationalPackages/kashmir"
+        "path" : "/internationalPackages/kashmir",
+        "description" : "",
+        "places" : "   02 Nights in Gangtok, 01 Night in Pelling, 02 Nights in Darjeeling",
+        "duration" : "5 Nights / 6 Days",
+        "offer" : "up to 10% off.",
+        "start" : "Ex Bagdogra Airport",
+        "hotel" : "☆ ☆ ☆"
     },
     {
         "country": "United States of America",
         "img" : "assets/international/6.jpg",
         "pricing" : "₹ 50,000",
-        "path" : "/internationalPackages/Europe"
+        "path" : "/internationalPackages/Europe",
+        "description" : "",
+        "places" : "   02 Nights in Gangtok, 01 Night in Pelling, 02 Nights in Darjeeling",
+        "duration" : "5 Nights / 6 Days",
+        "offer" : "up to 10% off.",
+        "start" : "Ex Bagdogra Airport",
+        "hotel" : "☆ ☆ ☆"
     },
     {
         "country": "Australia",
         "img" : "assets/international/7.jpg",
         "pricing" : "₹ 50,000",
-        "path" : "/internationalPackages/Australia"
+        "path" : "/internationalPackages/Australia",
+        "description" : "",
+        "places" : "   02 Nights in Gangtok, 01 Night in Pelling, 02 Nights in Darjeeling",
+        "duration" : "5 Nights / 6 Days",
+        "offer" : "up to 10% off.",
+        "start" : "Ex Bagdogra Airport",
+        "hotel" : "☆ ☆ ☆"
     },
     {
         "country": "New Zealand",
         "img" : "assets/international/8.jpg",
         "pricing" : "₹ 50,000",
-        "path" : "/internationalPackages/New_Zealand"
+        "path" : "/internationalPackages/New_Zealand",
+        "description" : "",
+        "places" : "   02 Nights in Gangtok, 01 Night in Pelling, 02 Nights in Darjeeling",
+        "duration" : "5 Nights / 6 Days",
+        "offer" : "up to 10% off.",
+        "start" : "Ex Bagdogra Airport",
+        "hotel" : "☆ ☆ ☆"
     }
 ]

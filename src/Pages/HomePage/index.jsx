@@ -48,17 +48,19 @@ export default function HomePage() {
                         {
                             serviceData.map((data) => {
                                 return (
-                                    <div className="service flex flex-col justify-around min-w-[300px] m-8 shadow-xl rounded-[10px]">
+                                    <div className="service flex flex-col justify-between min-w-[300px] m-8 shadow-xl rounded-[10px]">
                                         <div className="img flex justify-center items-center mb-4">
                                             <img className='w-[60%] ' src={data.img} alt="" />
                                         </div>
 
-                                        <div className="headingFont font-bold text-[18px] mb-4 text-[#246883]">
-                                            {data.type}
-                                        </div>
+                                        <div>
+                                            <div className="headingFont font-bold text-[18px] text-[#246883]">
+                                                {data.type}
+                                            </div>
 
-                                        <div className="para textFont text-[15px] text-justify mb-4">
-                                            {data.detail}
+                                            <div className="para textFont text-[15px] text-justify my-4">
+                                                {data.detail}
+                                            </div>
                                         </div>
 
                                     </div>
@@ -89,7 +91,7 @@ export default function HomePage() {
                                 International
                             </div>
                             <div className="para textFont text-[15px] text-justify mb-4">
-                                This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent. This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent.
+                                Whether you're dreaming of tropical beaches, historic landmarks, or rugged wilderness, our tours have something for everyone. Experience the wonder of the pyramids in Egypt, the stunning beauty of the Swiss Alps, or the vibrant culture of Japan. All of our tours are led by experienced guides who will help you to navigate the local culture, customs and make sure you have a safe and comfortable journey. Book one of our international tour packages today and start planning your next adventure!
                             </div>
                             <div className="buton pt-8">
                                 <NavLink to="/internationalPackages" onClick={() => { window.scrollTo(0, 0) }} className='exploerButton rounded-[10px] py-2 shadow-2xl'>
@@ -113,7 +115,7 @@ export default function HomePage() {
                                 Domestic
                             </div>
                             <div className="para textFont text-[15px] text-justify mb-4">
-                                This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent. This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent.
+                                Are you looking for an unforgettable vacation in India? Look no further! Our Indian tour packages offer a unique blend of culture, history, and adventure.Our packages are designed to suit a variety of interests and budgets. Whether you're a culture vulture, a foodie, or an adventure seeker, we have something for you. Don't miss out on the opportunity to discover the magic of India. Book one of our tour packages today and experience the trip of a lifetime!
                             </div>
                             <div className="buton pt-8">
                                 <NavLink to="/domesticPackages" onClick={() => { window.scrollTo(0, 0) }} className='exploerButton rounded-[10px] py-2 shadow-2xl'>

@@ -1,48 +1,38 @@
 [
     {
         "type" : "Domestic & International Package",
-        "detail" : "This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent",
+        "detail" : "Are you ready to embark on a journey of a lifetime? Look no further! Our tour packages offer a diverse range of destinations, activities and experiences to make your trip an unforgettable one. We have something for everyone.",
         "img" : "assets/icons/package.png"
     },
     
     {
         "type" : "Comprehensive Trip Planning",
-        "detail" : "This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent",
+        "detail" : "Our expert travel planners will work with you to create a personalized itinerary based on your interests, budget and schedule. We will take care of everything from flight and accommodation bookings, to transportation and activity arrangements.",
         "img" : "assets/icons/planTrip.png"
     },
     {
         "type" : "Corporate Travel Consultation",
-        "detail" : "This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent",
+        "detail" : "Our experienced team of corporate travel consultants will work with you to create a customized travel program that meets the unique needs of your company. We will help you to identify cost-saving opportunities, and manage your company's travel expenses.",
         "img" : "assets/icons/business.png"
     },
     {
-        "type" : "International Travel Guidance",
-        "detail" : "This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent",
-        "img" : "assets/icons/international.svg"
-    },
-    {
         "type" : "Air tickets",
-        "detail" : "This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent",
+        "detail" : "Are you looking for affordable and convenient air tickets? Look no further! Our company offers the best deals on airfare for both domestic and international flights. We have access to a wide range of airlines, including major carriers and low-cost airlines.",
         "img" : "assets/icons/airTicket.png"
     },
     {
-        "type" : "Comprehensive Trip Planning",
-        "detail" : "This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent",
-        "img" : "assets/icons/planTrip.png"
-    },
-    {
         "type" : "Visa ",
-        "detail" : "This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent",
+        "detail" : "We offer a comprehensive range of visa services for countries around the world. Our team of experts will guide you through the entire process, from determining the type of visa required, to gathering and submitting the necessary documents.",
         "img" : "assets/icons/visa.png"
     },
     {
         "type" : "Hotel Booking ",
-        "detail" : "This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent",
+        "detail" : "We have a vast selection of hotels, resorts, and vacation rentals to choose from, in destinations all around the world. Whether you're looking for luxury accommodations or budget-friendly options, we have something for everyone and in various range. ",
         "img" : "assets/icons/hotel.png"
     },
     {
         "type" : "Cruise Booking ",
-        "detail" : "This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent",
+        "detail" : "Our cruise booking service offers a wide range of options to suit your needs and budget. We have access to a wide range of cruises from major cruise lines, luxury liners, and small ships Booking with us is easy and secure, you can do it online or contact us for assistance.",
         "img" : "assets/icons/cruise.png"
     }
 ]

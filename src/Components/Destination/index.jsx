@@ -46,7 +46,12 @@ export default function Destination({ description, title, image, duration, place
   });
 
 
+  useEffect(() => {
+    validate();
+  }, [name, mail, number, passenger, address, hotel, budget])
+
   const validate = () => {
+    console.log(name, mail, number, passenger, address, hotel, budget)
     if (name.length <= 3) {
       setMessage('Please enter valid name.');
       setValid(false);
@@ -99,11 +104,13 @@ export default function Destination({ description, title, image, duration, place
         console.log(result.text);
         setBooked(true);
         setMessage('Your booking has been confirmed. Please check your email for more details.');
+        setOpen(true);
       }, (error) => {
         console.log(error.text);
         setBooked(false);
         setValid(false);
         setMessage('Something went wrong. Please try again.');
+        setOpen(true);
       });
   }
 
@@ -111,7 +118,9 @@ export default function Destination({ description, title, image, duration, place
     if (valid) {
       sendMessage();
     }
-    setOpen(true);
+    else{
+      setOpen(true);
+    }
   }
 
   return (
@@ -147,20 +156,20 @@ export default function Destination({ description, title, image, duration, place
         <div className="cursiveFont text-[55px] md:text-[60px] text-center mt-8 text-[#246883]"> Book Now </div>
 
         <div className="form w-[90%] md:w-[40%] flex flex-col textFont m-auto p-4 rounded-[10px] shadow-2xl py-8">
-          <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='Full Name' type="text" value={name}  onChange={(e) => { setName(e.target.value); validate(); }} />
-          <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='Email' type="mail" value={mail} onChange={(e) => { setMail(e.target.value); validate(); }} />
-          <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='Number' type="tel" value={number} onChange={(e) => { setNumber(e.target.value); validate(); }} />
-          <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='No. of Passengers' type="number" value={passenger} minLength="1" onChange={(e) => { setPassenger(e.target.value); validate(); }} />
+          <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='Full Name' type="text" value={name}  onChange={(e) => { setName(e.target.value); }} />
+          <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='Email' type="mail" value={mail} onChange={(e) => { setMail(e.target.value); }} />
+          <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='Number' type="tel" value={number} onChange={(e) => { setNumber(e.target.value);}} />
+          <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='No. of Passengers' type="number" value={passenger} minLength="1" onChange={(e) => { setPassenger(e.target.value); }} />
           {/* <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder="MM/DD/YYYY" onFocus={()=>{setDateType("date")}}  type={dateType} value={date} onChange={(e) => { setTravelDate(e.target.value); validate(); }} /> */}
-          <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='Departure city' type="text" value={address} onChange={(e) => { setAddress(e.target.value); validate(); }} />
-          <select className='inputs w-[97%] md:w-[80%] shadow-md' required value={hotel} onChange={(e) => { setHotel(e.target.value); validate(); }}>
+          <input className='inputs w-[97%] md:w-[80%] shadow-md' required placeholder='Departure city' type="text" value={address} onChange={(e) => { setAddress(e.target.value);}} />
+          <select className='inputs w-[97%] md:w-[80%] shadow-md' required value={hotel} onChange={(e) => { setHotel(e.target.value); }}>
             <option value="" disabled selected>Select Hotel</option>
             <option value="5 Star">5 Star</option>
             <option value="4 Star">4 Star</option>
             <option value="3 Star">3 Star</option>
           </select>
 
-          <select className='inputs w-[97%] md:w-[80%] shadow-md' required value={budget} onChange={(e) => { setBudget(e.target.value); validate(); }}>
+          <select className='inputs w-[97%] md:w-[80%] shadow-md' required value={budget} onChange={(e) => { setBudget(e.target.value); }}>
             <option value="" disabled selected>Select Budget</option>
             <option value="Less than ₹15,000">Less than ₹15,000</option>
             <option value="Medium - ₹15,000 - ₹30,000">₹15,000 - ₹30,000</option>

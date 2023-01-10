@@ -68,46 +68,6 @@ export default function HomePage() {
 
                 </div>
 
-
-
-                <div className="packageSection">
-                    <div className="cursiveFont text-[50px] md:text-[90px]  text-center text-[#246883]">
-                        Packages
-                    </div>
-
-                    <div className="packages flex justify-center items-center flex-col md:flex-row">
-                        <div className="pack h-[350px] w-[300px] int shadow-2xl rounded-[10px] p-4 flex flex-col justify-end md:m-8 m-4">
-                            <div className="headingFont font-bold text-[21px]  text-[#268eb6]">
-                                International
-                            </div>
-                            <div className="para textFont text-[13px] text-white text-justify mb-2">
-                                khsfg hsdf sdkfg s sfh sfs fsfg ih hfsdlshg g gighfdsgfdkgd  hsfgsdf gfghd fg s dfhiosg
-                            </div>
-
-                            <div className="buton">
-                                <NavLink to="/internationalPackages" onClick={()=>{window.scrollTo(0, 0)}} className='exploerButton rounded-[10px] py-2 shadow-2xl'>
-                                    Explore More
-                                </NavLink>
-                            </div>
-                        </div>
-                        <div className="pack h-[350px] w-[300px] dom shadow-2xl rounded-[10px] p-4 flex flex-col justify-end m-4 md:m-8">
-                            <div className="headingFont font-bold text-[21px]  text-[#268eb6]">
-                                Domestic
-                            </div>
-                            <div className="para textFont text-[13px] text-white text-justify mb-2">
-                                khsfg hsdf sdkfg s sfh sfs fsfg ih hfsdlshg g gighfdsgfdkgd  hsfgsdf gfghd fg s dfhiosg
-                            </div>
-
-                            <div className="buton">
-                                <NavLink to="/domesticPackages" onClick={()=>{window.scrollTo(0, 0)}} className='exploerButton rounded-[10px] py-2 shadow-2xl'>
-                                    Explore More
-                                </NavLink>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
                 <div className="destinationsSection mt-4">
                     <div className="cursiveFont text-[50px] md:text-[90px]  text-center text-[#246883]">
                         Explore Destinations
@@ -127,13 +87,16 @@ export default function HomePage() {
                             <div className="headingFont font-bold text-[26px] mb-4 text-[#246883]">
                                 International
                             </div>
-
                             <div className="para textFont text-[15px] text-justify mb-4">
                                 This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent. This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent.
                             </div>
+                            <div className="buton pt-8">
+                                <NavLink to="/internationalPackages" onClick={()=>{window.scrollTo(0, 0)}} className='exploerButton rounded-[10px] py-2 shadow-2xl'>
+                                    Explore More
+                                </NavLink>
+                            </div>
                         </div>
                     </div>
-
 
                     <div className="international flex flex-col md:flex-row-reverse justify-between items-center w-[90%] p-4 m-auto rounded-[10px] shadow-xl mt-12">
                         <div className="img md:w-1/2 flex flex-col md:ml-8  md:items-right">
@@ -143,15 +106,18 @@ export default function HomePage() {
                             <div className='h-[250px] overflow-hidden rounded-[15px]'>
                                 <img src={domesticDestinantion[domesticIndex].img} className='image md:w-[100%] rounded-[10px]' alt="" />
                             </div>
-
                         </div>
                         <div className='md:w-1/2 mt-4 md:mt-0'>
                             <div className="headingFont font-bold text-[26px] mb-4 text-[#246883]">
                                 Domestic
                             </div>
-
                             <div className="para textFont text-[15px] text-justify mb-4">
                                 This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent. This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent.
+                            </div>
+                            <div className="buton pt-8">
+                                <NavLink to="/domesticPackages" onClick={()=>{window.scrollTo(0, 0)}} className='exploerButton rounded-[10px] py-2 shadow-2xl'>
+                                    Explore More
+                                </NavLink>
                             </div>
                         </div>
                     </div>

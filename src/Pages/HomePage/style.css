@@ -78,3 +78,13 @@
     position: absolute;
     bottom: 50px;
 }
+
+.reviews{
+   
+     width: 380px;
+     padding: 10px;
+}
+
+.reviewCard{
+    background-color: rgb(241, 243, 243);
+}

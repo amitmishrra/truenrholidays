@@ -3,6 +3,7 @@ import "./style.css"
 import serviceData from "../../JSON/services.json"
 import internationDestination from "../../JSON/international.json"
 import domesticDestinantion from "../../JSON/domestic.json"
+import reviews from "../../JSON/reviews.json"
 import { NavLink } from 'react-router-dom'
 import ScrollDown from '../../Components/ScrollDown'
 export default function HomePage() {
@@ -33,7 +34,7 @@ export default function HomePage() {
                 </button>
 
                 <div className="scrollDown">
-                    <ScrollDown/>
+                    <ScrollDown />
                 </div>
             </div>
 
@@ -91,7 +92,7 @@ export default function HomePage() {
                                 This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent. This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent.
                             </div>
                             <div className="buton pt-8">
-                                <NavLink to="/internationalPackages" onClick={()=>{window.scrollTo(0, 0)}} className='exploerButton rounded-[10px] py-2 shadow-2xl'>
+                                <NavLink to="/internationalPackages" onClick={() => { window.scrollTo(0, 0) }} className='exploerButton rounded-[10px] py-2 shadow-2xl'>
                                     Explore More
                                 </NavLink>
                             </div>
@@ -115,7 +116,7 @@ export default function HomePage() {
                                 This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent. This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent.
                             </div>
                             <div className="buton pt-8">
-                                <NavLink to="/domesticPackages" onClick={()=>{window.scrollTo(0, 0)}} className='exploerButton rounded-[10px] py-2 shadow-2xl'>
+                                <NavLink to="/domesticPackages" onClick={() => { window.scrollTo(0, 0) }} className='exploerButton rounded-[10px] py-2 shadow-2xl'>
                                     Explore More
                                 </NavLink>
                             </div>
@@ -123,6 +124,41 @@ export default function HomePage() {
                     </div>
                 </div>
 
+
+
+
+                <div>
+                    <div className="cursiveFont text-[50px] md:text-[90px]  text-center text-[#246883]">
+                        Users Reviews
+                    </div>
+
+                    <div className="services flex flex-row justify-between  overflow-scroll md:overflow-auto">
+                        {
+                            reviews.map((data) => {
+                                return (
+                                    <>
+                                        <div className="reviewCard flex flex-row justify-around min-w-[360px] w-[380px] m-8 shadow-xl rounded-[10px]">
+                                            <div className="reviewImage w-[30%] flex justify-center items-center rounded-full p-2 overflow-hidden">
+                                                <img src={data.image} alt="image" className=" rounded-full" />
+                                            </div>
+                                            <div className='w-[70%] m-auto p-2 py-4'>
+                                                <div className="reviewName text-[20px] font-bold text-[#246883] headingFont">
+                                                    {data.name}
+                                                </div>
+
+                                                <div className="reviewText text-[15px]text-justify mt-2 textFont">
+                                                    {data.review}
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </>
+                                )
+                            })
+                        }
+                    </div>
+                </div>
 
                 <div className="counter flex justify-around mt-12 text-center flex-wrap px-4">
                     <div className='flex flex-col justify-center items-center m-2'>
@@ -161,6 +197,11 @@ export default function HomePage() {
                     </div>
 
                 </div>
+
+
+
+
+
 
                 <div className="cursiveFont text-[35px] md:text-[60px] text-[#246883] text-center mt-12">
                     your destination is waiting for you.

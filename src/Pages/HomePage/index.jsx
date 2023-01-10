@@ -127,7 +127,7 @@ export default function HomePage() {
 
 
 
-                <div>
+                <div className='mt-8'>
                     <div className="cursiveFont text-[50px] md:text-[90px]  text-center text-[#246883]">
                         Users Reviews
                     </div>
@@ -137,7 +137,7 @@ export default function HomePage() {
                             reviews.map((data) => {
                                 return (
                                     <>
-                                        <div className="reviewCard flex flex-row justify-around min-w-[360px] w-[380px] m-8 shadow-xl rounded-[10px]">
+                                        <div className="reviewCard flex flex-row justify-around min-w-[360px] w-[380px] mx-8 my-4 shadow-xl rounded-[10px]">
                                             <div className="reviewImage w-[30%] flex justify-center items-center rounded-full p-2 overflow-hidden">
                                                 <img src={data.image} alt="image" className=" rounded-full" />
                                             </div>

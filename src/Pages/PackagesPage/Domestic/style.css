@@ -1,4 +1,10 @@
 .dom-pack{
     width: 350px;
     background-color: rgb(241, 243, 243);
+    transition: 0.7s;
+    transform :scale(1);
+}
+
+.dom-pack:hover{
+    transform :scale(1.02);
 }

@@ -93,7 +93,7 @@ export default function HomePage() {
                             <div className="para textFont text-[15px] text-justify mb-4">
                                 Whether you're dreaming of tropical beaches, historic landmarks, or rugged wilderness, our tours have something for everyone. Experience the wonder of the pyramids in Egypt, the stunning beauty of the Swiss Alps, or the vibrant culture of Japan. All of our tours are led by experienced guides who will help you to navigate the local culture, customs and make sure you have a safe and comfortable journey. Book one of our international tour packages today and start planning your next adventure!
                             </div>
-                            <div className="buton pt-8">
+                            <div className="buton py-4">
                                 <NavLink to="/internationalPackages" onClick={() => { window.scrollTo(0, 0) }} className='exploerButton rounded-[10px] py-2 shadow-2xl'>
                                     Explore More
                                 </NavLink>
@@ -117,7 +117,7 @@ export default function HomePage() {
                             <div className="para textFont text-[15px] text-justify mb-4">
                                 Are you looking for an unforgettable vacation in India? Look no further! Our Indian tour packages offer a unique blend of culture, history, and adventure.Our packages are designed to suit a variety of interests and budgets. Whether you're a culture vulture, a foodie, or an adventure seeker, we have something for you. Don't miss out on the opportunity to discover the magic of India. Book one of our tour packages today and experience the trip of a lifetime!
                             </div>
-                            <div className="buton pt-8">
+                            <div className="buton py-4">
                                 <NavLink to="/domesticPackages" onClick={() => { window.scrollTo(0, 0) }} className='exploerButton rounded-[10px] py-2 shadow-2xl'>
                                     Explore More
                                 </NavLink>
@@ -125,10 +125,6 @@ export default function HomePage() {
                         </div>
                     </div>
                 </div>
-
-
-
-
                 <div className='mt-8'>
                     <div className="cursiveFont text-[50px] md:text-[90px]  text-center text-[#246883]">
                         Users Reviews
@@ -139,7 +135,7 @@ export default function HomePage() {
                             reviews.map((data) => {
                                 return (
                                     <>
-                                        <div className="reviewCard flex flex-row justify-around min-w-[360px] w-[380px] mx-8 my-4 shadow-xl rounded-[10px]">
+                                        <div className="reviewCard flex flex-row justify-around min-w-[360px] w-[380px] mx-8 my-8 shadow-xl rounded-[10px]">
                                             <div className="reviewImage w-[30%] flex justify-center items-center rounded-full p-2 overflow-hidden">
                                                 <img src={data.image} alt="image" className=" rounded-full" />
                                             </div>

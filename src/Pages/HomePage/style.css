@@ -24,6 +24,11 @@
      background-color: rgb(241, 243, 243);
      width: 300px;
      padding: 10px;
+        transition: 0.3s;
+}
+
+.service:hover{
+    transform :scale(1.04);
 }
 .international{
     background-color: rgb(241, 243, 243);
@@ -87,4 +92,8 @@
 
 .reviewCard{
     background-color: rgb(241, 243, 243);
+    transition: 0.3s;
+}
+.reviewCard:hover{
+    transform :scale(1.04);
 }

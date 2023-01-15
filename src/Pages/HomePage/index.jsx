@@ -135,20 +135,10 @@ export default function HomePage() {
                             reviews.map((data) => {
                                 return (
                                     <>
-                                        <div className="reviewCard flex flex-row justify-around min-w-[360px] w-[380px] mx-8 my-8 shadow-xl rounded-[10px]">
-                                            <div className="reviewImage w-[30%] flex justify-center items-center rounded-full p-2 overflow-hidden">
-                                                <img src={data.image} alt="image" className=" rounded-full" />
-                                            </div>
-                                            <div className='w-[70%] m-auto p-2 py-4'>
-                                                <div className="reviewName text-[20px] font-bold text-[#246883] headingFont">
-                                                    {data.name}
-                                                </div>
-
-                                                <div className="reviewText text-[15px]text-justify mt-2 textFont">
-                                                    {data.review}
-                                                </div>
-
-                                            </div>
+                                        <div className="reviewCard flex flex-row justify-around min-w-[360px] w-[375px] h-[200px] mx-8 my-8 shadow-xl rounded-[10px]">
+                                        <video className='rounded-[10px] shadow-xl'
+                                            src={data.vid}
+                                            type="video/mp4" width="100%" height="300px" controls playsInline webkit-playsinline="true" />
 
                                         </div>
                                     </>

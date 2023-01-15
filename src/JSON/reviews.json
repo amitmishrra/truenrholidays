@@ -2,41 +2,25 @@
     {
         "name" : "John Doe",
         "review" : "This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent.",
-        "image" : "https://static.vectorcharacters.net/uploads/2012/12/Free_Man_Vector_Character_Preview.jpg"
+        "image" : "https://static.vectorcharacters.net/uploads/2012/12/Free_Man_Vector_Character_Preview.jpg",
+        "vid" : "assets/Videos/1.mp4"
     },
     {
         "name" : "John Doe",
         "review" : "This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent.",
-        "image" : "https://static.vectorcharacters.net/uploads/2012/12/Free_Man_Vector_Character_Preview.jpg"
+        "image" : "https://static.vectorcharacters.net/uploads/2012/12/Free_Man_Vector_Character_Preview.jpg",
+        "vid" : "assets/Videos/2.mp4"
     },
     {
         "name" : "John Doe",
         "review" : "This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent.",
-        "image" : "https://static.vectorcharacters.net/uploads/2012/12/Free_Man_Vector_Character_Preview.jpg"
+        "image" : "https://static.vectorcharacters.net/uploads/2012/12/Free_Man_Vector_Character_Preview.jpg",
+        "vid" : "assets/Videos/3.mp4"
     },
     {
         "name" : "John Doe",
         "review" : "This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent.",
-        "image" : "https://static.vectorcharacters.net/uploads/2012/12/Free_Man_Vector_Character_Preview.jpg"
-    },
-    {
-        "name" : "John Doe",
-        "review" : "This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent.",
-        "image" : "https://static.vectorcharacters.net/uploads/2012/12/Free_Man_Vector_Character_Preview.jpg"
-    },
-    {
-        "name" : "John Doe",
-        "review" : "This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent.",
-        "image" : "https://static.vectorcharacters.net/uploads/2012/12/Free_Man_Vector_Character_Preview.jpg"
-    },
-    {
-        "name" : "John Doe",
-        "review" : "This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent.",
-        "image" : "https://static.vectorcharacters.net/uploads/2012/12/Free_Man_Vector_Character_Preview.jpg"
-    },
-    {
-        "name" : "John Doe",
-        "review" : "This is your Travel Tips Article. Add a full article with helpful travel tips or a short memo with an exciting update regarding you, your business, or your recent.",
-        "image" : "https://static.vectorcharacters.net/uploads/2012/12/Free_Man_Vector_Character_Preview.jpg"
+        "image" : "https://static.vectorcharacters.net/uploads/2012/12/Free_Man_Vector_Character_Preview.jpg",
+        "vid" : "assets/Videos/4.mp4"
     }
 ]

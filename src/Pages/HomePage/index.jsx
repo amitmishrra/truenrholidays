@@ -125,28 +125,28 @@ export default function HomePage() {
                         </div>
                     </div>
                 </div>
-                <div className='mt-8'>
-                    <div className="cursiveFont text-[50px] md:text-[90px]  text-center text-[#246883]">
-                        Users Reviews
-                    </div>
+//                 <div className='mt-8'>
+//                     <div className="cursiveFont text-[50px] md:text-[90px]  text-center text-[#246883]">
+//                         Users Reviews
+//                     </div>
 
-                    <div className="services flex flex-row justify-between  overflow-scroll md:overflow-auto">
-                        {
-                            reviews.map((data) => {
-                                return (
-                                    <>
-                                        <div className="reviewCard flex flex-row justify-around min-w-[360px] w-[375px] h-[200px] mx-8 my-8 shadow-xl rounded-[10px]">
-                                        <video className='rounded-[10px] shadow-xl'
-                                            src={data.vid}
-                                            type="video/mp4" width="100%" height="300px" controls playsInline webkit-playsinline="true" />
+//                     <div className="services flex flex-row justify-between  overflow-scroll md:overflow-auto">
+//                         {
+//                             reviews.map((data) => {
+//                                 return (
+//                                     <>
+//                                         <div className="reviewCard flex flex-row justify-around min-w-[360px] w-[375px] h-[200px] mx-8 my-8 shadow-xl rounded-[10px]">
+//                                         <video className='rounded-[10px] shadow-xl'
+//                                             src={data.vid}
+//                                             type="video/mp4" width="100%" height="300px" controls playsInline webkit-playsinline="true" />
 
-                                        </div>
-                                    </>
-                                )
-                            })
-                        }
-                    </div>
-                </div>
+//                                         </div>
+//                                     </>
+//                                 )
+//                             })
+//                         }
+//                     </div>
+//                 </div>
 
                 <div className="counter flex justify-around mt-12 text-center flex-wrap px-4">
                     <div className='flex flex-col justify-center items-center m-2'>

@@ -24,7 +24,8 @@ export default function Footer() {
                     <div className='text-gray-400 text-justify' >
                         136, Shree Nagar Extension, Shree Nagar,<br />
                         Indore, Madhya Pradesh 452010, India <br />
-                        truenrholidays@gmail.com 
+                        truenrholidays@gmail.com <br />
+                        0731-4087636
                     </div>
                 </div>
 

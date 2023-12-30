@@ -16,7 +16,7 @@ export default function About() {
                     <br />
                     Since established in 2019, our primary aim was to provide quality travel services to business and leisure travellers. The agency continued to grow and branch out its interests to rise as one of the exponents in the travel industry.
                     <br />
-                    Supported by our impressive customer satisfaction and constant improvement, Alexa Holidays & Event Planners has expanded to cover various facts of the industry. Our experience led to perfection in both our outbound and inbound units.
+                    Supported by our impressive customer satisfaction and constant improvement, True NR Holidays has expanded to cover various facts of the industry. Our experience led to perfection in both our outbound and inbound units.
                 </div>
                 <div className='w-[100%] md:w-1/2 m-4 rounded-[10px] '>
                     <img className='w-[90%] rounded-[10px] shadow-2xl m-auto' src="/assets/about.jpg" alt="" />

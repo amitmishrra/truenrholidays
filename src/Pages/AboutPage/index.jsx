@@ -12,7 +12,7 @@ export default function About() {
 
             <div className='flex flex-col-reverse justify-between items-center md:items-start md:flex-row px-2 md:px-0 itmes-center'>
                 <div className='w-[100%] md:w-1/2 textFont text-justify m-4'>
-                    We are very excited to introduce 'Alexa Holidays & Event Planners' as the one stop provider for all your travel needs and requirements whether it's Domestic or International. We label ourselves as leading, innovative, and highly efficient and look forward to demonstrate these qualities at the earliest possible chance.
+                    We are very excited to introduce 'True NR Holidays' as the one stop provider for all your travel needs and requirements whether it's Domestic or International. We label ourselves as leading, innovative, and highly efficient and look forward to demonstrate these qualities at the earliest possible chance.
                     <br />
                     Since established in 2019, our primary aim was to provide quality travel services to business and leisure travellers. The agency continued to grow and branch out its interests to rise as one of the exponents in the travel industry.
                     <br />
